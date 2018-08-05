@@ -1,9 +1,11 @@
 ## 区块链技术讲解
 
+
+
 ### RoadMap
 
 区块链是什么 >> 区块链的历史 >> 区块链技术
- 
+
 + 区块链是什么？
 
 区块链是一串包含验证信息的区块。
@@ -15,6 +17,7 @@
 + 区块链技术
 
 简述区块链用到的技术。
+
 
 
 ### Content
@@ -32,6 +35,22 @@
 
 作为密码学、分布式系统、共识机制、博弈论的集大成者，区块链推动了多领域学术研究的蓬勃发展，也为相关产业提供诸多机遇。
 
+
+
+
+
+<div align="right">
+
+Mercury 
+
+2018/8/3
+
+</div>
+
+
+
+---
+
 ### Reference
 
 + [Bitcoin-faq](https://bitcoin.org/zh_CN/faq)
@@ -40,4 +59,3 @@
 + [CryptoCurrency-timeline](https://www.grantthornton.global/globalassets/1.-member-firms/global/insights/blockchain-hub/blockchain-timeline_final.pdf)
 + [Ethereum-whitepaper](https://github.com/ethereum/wiki/wiki/White-Paper)
 + [2018年区块链基础理论研究报告](https://www.jinse.com/blockchain/187081.html)
-
