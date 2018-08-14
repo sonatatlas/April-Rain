@@ -56,6 +56,7 @@ Mercury
 + [Bitcoin-faq](https://bitcoin.org/zh_CN/faq)
 + [Bitcoin-whitepaper](https://bitcoin.org/bitcoin.pdf)
 + [Blockchain](https://en.wikipedia.org/wiki/Blockchain)
++ [Blockchain-Origin](https://yeasy.gitbooks.io/blockchain_guide/born/ledger_history.html)
 + [CryptoCurrency-timeline](https://www.grantthornton.global/globalassets/1.-member-firms/global/insights/blockchain-hub/blockchain-timeline_final.pdf)
 + [Ethereum-whitepaper](https://github.com/ethereum/wiki/wiki/White-Paper)
 + [2018年区块链基础理论研究报告](https://www.jinse.com/blockchain/187081.html)
