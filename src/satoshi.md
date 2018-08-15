@@ -1,61 +1,37 @@
-## Satoshi Nakamoto
+# Satoshi Nakamoto
 
 
+### 中心思想
 
-### 思路
-
-区块链是什么 >> 区块链的历史 >> 区块链技术
-
-+ 区块链是什么？
-
-区块链是一串包含验证信息的区块。
-
-+ 区块链的历史
-
-加密货币是区块链，但区块链并不是加密货币。目前来讲加密货币是区块链的最大应用。且两者发展史重叠较多，故以简短举例部分加密货币历史来映射区块链发展史。
-
-+ 区块链技术
-
-简述区块链用到的技术。
+在 2011 年 5 月的一篇文章中，乔治华盛顿大学教授尼克·萨博谈起比特币创造者时表示：“在我认识的人里面，对这个想法足够感兴趣，并且能付诸实践的，本来只有我自己、维戴(Wei Dai)、哈爾·芬尼三个人，后来中本出现了”
 
 
+### 分析
 
-### 内容
-
-
-区块链是一串包含验证信息的区块，其中每个区块与上一个区块相连，直至创世区块。区块链具有去中心化，不可篡改，匿名等特性。
-
-就目前来讲，以比特币为代表的加密货币是区块链的最大应用：
-
-+ 1991 年， Stuart Haber 和 W. Scott Stornetta 阐述了加密货币的概念，他们希望实现一个系统，存储在其中的文档的时间戳不能被篡改或失效。
-
-+ 1998 年，Wei Dai 在 crypherpunks 邮件列表中首次阐述了 “加密货币” 的概念，即一个采用密码学原理控制货币的发行和交易、而不是依赖于中央管理机构的全新的货币形态。
-
-+ 2008 年，Satoshi Nakamoto 在 cryptography 邮件列表中发表了《 Peer-to-Peer Electronic Cash System 》。次年，比特币作为一种点对点的加密货币诞生。
-
-作为密码学、分布式系统、共识机制、博弈论的集大成者，区块链推动了多领域学术研究的蓬勃发展，也为相关产业提供诸多机遇。
+“Satoshi Nakamoto, 43, Male, Japan”
 
 
+我在2008年发表了论文 《Bitcoin: A Peer-to-Peer Electronic Cash System》，09年发布了首个比特币软件，并正式启动了比特币金融系统。
+	
+
+到了2010年，我选择逐渐淡出比特币项目，并将其移交给社区的其他成员。
+	
+
+### 进一步分析
+
+“我是谁”这个问题，并没有讨论的必要。如果非要有个定义，阿桑奇先生所提到的 “CypherPunk” ，或许你们可以参考一下。毕竟这个称呼还算得上酷。
 
 
+### 第三部分
 
-<div align="right">
+互联网上的贸易，几乎都需要借助第三方机构来处理电子支付信息，这些中介不仅增加了交易的成本，还限制了贸易的规模，也限制了日常的小额支付贸易。同时，在实际的商业行为中，第三方机构与客户之信任难题也近乎是难以避免的。
+	
 
-Mercury 
-
-2018/8/3
-
-</div>
+这就是为什么 Bitcoin 会出现并蓬勃发展，我们确实非常需要这样一种电子支付系统，它基于密码学原理而不基于信用，使得任何达成一致的双方，能够直接进行支付，从而不需要第三方的参与。
 
 
+### 结尾
 
----
 
-### 参考
-
-+ [Satoshi Nakamoto wiki](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)
-+ [Satoshi Nakamoto bitcoin wiki](https://en.bitcoin.it/wiki/Satoshi_Nakamoto)
-+ [need to no -- newyourker](https://www.newyorker.com/business/currency/we-need-to-know-who-satoshi-nakamoto-is)
-+ [The Case for Bitcoin](https://medium.com/@abarisser/who-is-satoshi-nakamoto-b18b2847ddb6)
-+ [知乎](https://www.zhihu.com/question/22199390)
-+ [巴比特](http://www.8btc.com/cypherpunk-satoshi)
+“If you don't believe me or don't get it, I don't have time to try to convince you, sorry.”
+	
