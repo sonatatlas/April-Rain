@@ -1,0 +1,37 @@
+.page_home {
+    background: center / cover no-repeat url(../assets/bgs/home@2x.png);
+}
+
+.content_top_home {
+    position: relative;
+    margin-top: 10em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font_bold_home {
+    color: white;
+    line-height: 1.5em;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.font_regular_home {
+    color: white;
+    line-height: 2em;
+    font-size: 3em;
+    font-weight: Regular;
+}
+
+.logo_wrapper_home {
+    margin-top: 10em;
+}
+
+.logo_home {
+    position: relative;
+    margin: auto;    
+    height: 18em;
+    width: 20em;
+}

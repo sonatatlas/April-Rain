@@ -1,1 +1,7 @@
-/docs
+# IGNORE
+
+# code package been built
+/dist
+
+# hide node_modules
+/node_modules

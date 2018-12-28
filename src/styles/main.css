@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+
+*{
+    font-family: 'Monntserrat', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+#tachion {
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.safe {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    margin: auto;    
+}
+
+.logo_tachion {
+    background: center / cover no-repeat url(../assets/components/tachion.svg);
+}

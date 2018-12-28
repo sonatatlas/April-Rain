@@ -1,0 +1,42 @@
+.page_welcome {
+    background: center / cover no-repeat url(../assets/bgs/welcome@2x.png);
+}
+
+.logo_finger {
+    background: center / cover no-repeat url(../assets/components/finger.svg);    
+}
+
+.content_top_welcome {
+    position: relative;
+    margin-top:8em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font_bold_welcome {
+    color: black;
+    line-height: 1.5em;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.font_regular_welcome {
+    color: black;
+    line-height: 1.3em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* logo_wrapper */
+.logo_wrapper_welcome {
+    margin-top: 3em;
+}
+
+.logo_welcome {
+    position: relative;
+    margin: 5em auto;
+    height: 18em;
+    width: 18em;
+}
