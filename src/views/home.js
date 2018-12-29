@@ -7,7 +7,10 @@ const d = new DOM();
 
 /* methods */
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
-const welcome = e => require('./welcome');
+const welcome = e => {
+  e.preventDefault();
+  require('./welcome');
+}
   
 /* DOM */
 //@structure

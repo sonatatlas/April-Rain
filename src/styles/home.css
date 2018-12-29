@@ -22,7 +22,7 @@
     color: white;
     line-height: 1.5em;
     font-size: 4.5em;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .font_regular_home {
@@ -34,7 +34,7 @@
 
 .logo_wrapper_home {
     position: relative;
-    top: -15em;
+    top: -16em;
     height: 135vw;
     width: 100%;    
     background: center / cover no-repeat url('../assets/home/circles@2x.png');

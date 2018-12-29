@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Shine on the Ethereum",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && netlify deploy --prod",
     "start": "webpack-dev-server --config webpack.dev.js"
   },
   "main": "index.js",
