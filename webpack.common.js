@@ -20,7 +20,9 @@ module.exports = {
       use: [
         {
           loader: 'file-loader',
-          options: {},
+          options: {
+            emitFile: true,
+          },
         },
       ],
     },{
@@ -43,9 +45,9 @@ module.exports = {
       filename: "[name].[contenthash].css",
       chunkFilename: "[id].[contenthash].css"
     }),    
-    // new WorkboxPlugin.GenerateSW({
-    //   clientsClaim: true,
-    //   skipWaiting: true
-    // })
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
+    })
   ], 
 };

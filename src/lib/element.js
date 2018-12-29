@@ -35,7 +35,7 @@ export default class Element {
     this.tag = tag;
     this.options = options;
     this.methods = methods;
-    this.text = text;
+    // this.text = text;
     this.element = Element.c(tag, options, methods, text);
   }
 

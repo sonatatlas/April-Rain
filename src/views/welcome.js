@@ -5,6 +5,9 @@ import '../styles/welcome.css';
 const e = new Element();
 const d = new DOM();
 
+// init
+d.id('tachion').innerHTML = '';
+
 // functions
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
 const enter = e => alert('hello, world!');

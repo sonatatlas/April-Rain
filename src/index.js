@@ -16,6 +16,7 @@ document.addEventListener('touchmove', e => {
   e.preventDefault()
 }, false)
 
+// TODO - SPA
 // router
 const r = new Router();
 const popstate = () => {

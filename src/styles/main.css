@@ -25,8 +25,9 @@
 
 .safe {
     position: relative;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
+    top: 5%;
     margin: auto;    
 }
 

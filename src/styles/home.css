@@ -1,10 +1,17 @@
+@media (min-device-height: 750px) {
+    .content_top_home { margin-top: 13em }
+}
+@media (max-device-height: 750px) {
+    .content_top_home { margin-top: 6em }
+}
+
 .page_home {
-    background: center / cover no-repeat url(../assets/bgs/home@2x.png);
+    background: center / cover no-repeat url('../assets/bgs/home@2x.png'),
+                linear-gradient(to bottom right, #80efe3 , #16c2c3);
 }
 
 .content_top_home {
     position: relative;
-    margin-top: 10em;
     height: 24em;
     display: flex;
     flex-direction: column;
@@ -20,18 +27,28 @@
 
 .font_regular_home {
     color: white;
-    line-height: 2em;
-    font-size: 3em;
-    font-weight: Regular;
+    line-height: 2.5em;
+    font-size: 2.8em;
+    font-weight: bold;
 }
 
 .logo_wrapper_home {
-    margin-top: 10em;
+    position: relative;
+    top: -15em;
+    height: 135vw;
+    width: 100%;    
+    background: center / cover no-repeat url('../assets/home/circles@2x.png');
+    background-size: 135vw 135vw;
 }
 
 .logo_home {
     position: relative;
     margin: auto;    
-    height: 18em;
-    width: 20em;
+    height: 20em;
+    width: 23em;
+}
+
+.logo_home, .wrapper_bottom {
+    position: relative;    
+    top: 32%;
 }

@@ -1,3 +1,10 @@
+@media (min-device-height: 750px) {
+    .content_top_welcome { margin-top: 13em }
+}
+@media (max-device-height: 750px) {
+    .content_top_welcome { margin-top: 6em }
+}
+
 .page_welcome {
     background: center / cover no-repeat url(../assets/bgs/welcome@2x.png);
 }
@@ -8,7 +15,6 @@
 
 .content_top_welcome {
     position: relative;
-    margin-top:8em;
     height: 24em;
     display: flex;
     flex-direction: column;
