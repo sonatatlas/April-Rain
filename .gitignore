@@ -5,3 +5,12 @@
 
 # hide node_modules
 /node_modules
+
+# System
+.DS_Store
+.MACOS_X
+
+# Pics
+*png
+*svg
+*jpg
