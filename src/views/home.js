@@ -1,3 +1,4 @@
+//#home.js
 import {DOM, Element} from '../lib';
 import '../styles/home.css';
 
@@ -8,7 +9,7 @@ const d = new DOM();
 /* methods */
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
 const welcome = e => {
-  e.preventDefault();
+  window.location.hash = '#welcome';
   require('./welcome');
 }
   

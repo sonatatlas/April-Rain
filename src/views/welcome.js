@@ -10,7 +10,10 @@ d.id('tachion').innerHTML = '';
 
 // functions
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
-const enter = e => alert('hello, world!');
+const enter = e => {
+  window.location.hash = '#panel';
+  require('./panel');
+}
 
 // DOM
 //@structure

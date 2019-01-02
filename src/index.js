@@ -6,12 +6,12 @@ window.document.body.style = `
   height: ${window.innerHeight}px;
 `;
 
-// main dom
+// Dom
 let e = new Element()
-let a = e.i('div', {'id': 'tachion'});
-a.t(document.body);
+e.i('div', {'id': 'tachion'}).t(document.body);
 
-// touch
+
+// Touch
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchstart", preventMotion, false);
 
@@ -21,10 +21,16 @@ function preventMotion(event) {
     event.stopPropagation();
 }
 
-// TODO - SPA
-// router
+// TODO - SPA Router
 const r = new Router();
 const popstate = () => {
+  // Disable PC Browser
+  if(window.innerWidth > window.innerHeight) {
+    document.body.innerHTML = `Please visit our site via mobile :)`;
+    return;
+  }
+
+  // navigator;
   let hash = window.location.hash.match(/#.*/);
   if(hash){
     hash[0].match(/\?/)?

@@ -1,10 +1,3 @@
-@media (min-device-height: 750px) {
-    .content_top_welcome { margin-top: 13em }
-}
-@media (max-device-height: 750px) {
-    .content_top_welcome { margin-top: 6em }
-}
-
 .page_welcome {
     background: center / cover no-repeat url(../assets/bgs/welcome@2x.png);
 }
@@ -45,4 +38,25 @@
     margin: 3em auto;
     height: 16em;
     width: 16em;
+}
+
+/* Phone */
+@media (min-device-height: 750px) {
+    .content_top_welcome { margin-top: 13em }
+}
+@media (max-device-height: 750px) {
+    .content_top_welcome { margin-top: 6em }
+}
+
+/* Pad */
+/* Pad */
+@media (min-device-width: 750px) {
+    .content_top_welcome {
+        height: 18em;
+        margin-top: 3em
+    }
+
+    .logo_welcome {
+        top: -1em;
+    }
 }

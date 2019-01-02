@@ -1,10 +1,4 @@
-@media (min-device-height: 750px) {
-    .content_top_home { margin-top: 13em }
-}
-@media (max-device-height: 750px) {
-    .content_top_home { margin-top: 6em }
-}
-
+/* Origin */
 .page_home {
     background: center / cover no-repeat url('../assets/bgs/home@2x.png'),
                 linear-gradient(to bottom right, #80efe3 , #16c2c3);
@@ -51,4 +45,20 @@
 .logo_home, .wrapper_bottom {
     position: relative;    
     top: 32%;
+}
+
+/* Phone */
+@media (min-device-height: 750px) {
+    .content_top_home { margin-top: 13em }
+}
+@media (max-device-height: 750px) {
+    .content_top_home { margin-top: 6em }
+}
+
+/* Pad */
+@media (min-device-width: 750px) {
+    .content_top_home { margin-top: 3em }
+    .logo_wrapper_home {
+        top: -22em;
+    }    
 }
