@@ -17,7 +17,8 @@
     flex-wrap: wrap;    
     justify-content: space-between;
     background-color: inherit;
-    width: 100%;
+    padding: 2%;
+    width: 96%;
 }
 
 .app {
@@ -25,7 +26,7 @@
     width: 26em;
     margin-bottom: 3em;
     border-radius: 5px;
-    box-shadow: 0px 10px 20px 0px #eee;
+    box-shadow: 0px 10px 50px 0px #eee;
     background: no-repeat #fff;
     background-size: 8em 8em;
     background-position: 50% 40%;
@@ -48,10 +49,11 @@
 .tab_bar_safe {
     /* 
        between or around
-       between for @align
-       around for visual
+       @between for align
+       @around for visual
    */
-    width: 92%;
+    width: 90%;
+    padding: 0 2%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -68,10 +70,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 88px;
+    border:2px transparent solid;
     background-clip:padding-box,border-box;
     background-origin:padding-box,border-box;
-    border:2px transparent solid;
-    box-shadow: 0px 10px 20px 0px #eee;
+    box-shadow: 0px 10px 30px 0px #eee;
 }
 
 .trends {
@@ -93,5 +95,3 @@
 .text_tab_bar_whatsup {
     color: #80efe3;
 }
-
-

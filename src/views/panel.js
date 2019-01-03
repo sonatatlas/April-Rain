@@ -1,25 +1,17 @@
 /*
-+ Panel
-   + App
-+ Tabbar
-   + Buttons
-*/
+ *
+ **/
 //#home.js
 import {DOM, Element} from '../lib';
 import '../styles/panel.css';
 import '../styles/pics.css';
 
 /* const */
-const e = new Element();
 const d = new DOM();
+const e = new Element();
 
 /* Init */
 d.id('tachion').innerHTML = '';
-
-//TODO
-/* Model */
-//@App
-//@Button
 
 /* DOM */
 //@structure
@@ -31,7 +23,13 @@ let wrapper_app_panel = e.i('div', {'class': 'wrapper_app_panel'}).t(safe_panel)
 let wrapper_app_panel_safe = e.i('div', {'class': 'wrapper_app_panel_safe'}).t(wrapper_app_panel);
 let apps = ['space', 'groups', 'store', 'work', 'wallet', 'investment'];
 for (let i in apps) {
-  let app = e.i('div', {'class': `app ${apps[i]}`}).t(wrapper_app_panel_safe);
+  let app = e.i('div', {'class': `app ${apps[i]}`, 'id': `${apps[i]}`}, {
+    'touchstart': () => {
+      d.id(apps[i]).style.backgroundColor = 'rgba(0, 0, 0, 0.08)'
+    }, 'touchend': () => {
+      d.id(apps[i]).style.backgroundColor = '#fff'
+    }
+  }).t(wrapper_app_panel_safe);
   e.i('text', {'class': 'text_app'}, {}, `${apps[i]}`).t(app);
 }
 
