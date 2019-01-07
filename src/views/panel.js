@@ -36,7 +36,13 @@ for (let i in apps) {
 //@tab-bar
 let tab_bar = e.i('div', {'class': 'tab_bar'}).t(page_panel);
 let tab_bar_safe = e.i('div', {'class': 'tab_bar_safe'}).t(tab_bar);
-let trends = e.i('div', {'class': 'button trends'}).t(tab_bar_safe);
-e.i('text', {'class': 'text_tab_bar text_tab_bar_trends'}, {}, `Trends`).t(trends);
-let whatsup = e.i('div', {'class': 'button whatsup'}).t(tab_bar_safe);
-e.i('text', {'class': 'text_tab_bar text_tab_bar_whatsup'}, {}, `Whatsup`).t(whatsup);
+let trends = e.i('div', {'class': 'button trends', 'id': 'trends'}, {
+  'touchstart': () => {
+    d.id('trends').className = 'button trends_tap';    
+  }, 'touchend': () => {
+    d.id('trends').className = 'button trends';
+    window.location.hash = '#notifications';
+    require('./notifications');
+  }
+}).t(tab_bar_safe);
+e.i('text', {'class': 'text_tab_bar text_tab_bar_trends'}, {}, `Notificaitions`).t(trends);

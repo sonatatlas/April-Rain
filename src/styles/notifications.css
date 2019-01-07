@@ -1,0 +1,41 @@
+/* notifications.css */
+.page_notifications {
+    /* #fafafa */
+    background-color: #fefefe;
+}
+
+.safe_notifications {}
+
+.navigator {
+    position: fixed;
+    top: 0;
+    width: 92%;
+    margin: 0 4vw;
+    height: 10em;
+    display: flex;
+    align-items: center;
+}
+
+.left_navigator {
+    position: relative;
+    width: 1.5em;
+    height: 2.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 3em;
+}
+
+.label_navigator {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: auto;
+}
+
+.notifications_wrapper {
+    height: 100%;
+    width: auto;
+    margin: auto;
+    position: relative;
+    top: 5em;    
+}

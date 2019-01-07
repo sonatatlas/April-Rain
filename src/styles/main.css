@@ -5,9 +5,10 @@
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+    font-family: 'Montserrat', sans-serif;    
     font-weight: 900;
+    color: #020433;
     text-align: center;
     overflow: hidden;
     moz-user-select: -moz-none; 
@@ -47,7 +48,7 @@ body {
     height: 100%;
     width: 100%;
     top: 5%;
-    margin: auto;    
+    margin: auto;
 }
 
 .logo_tachion {

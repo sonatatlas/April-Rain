@@ -1,7 +1,32 @@
 /* pics.css */
+
+/* Components */
+.left { background-image:  url('../assets/components/left.svg')}
+.right { background-image:  url('../assets/components/right.svg')}
+.right_white { background-image:  url('../assets/components/right_white.svg')}
+
+/* Panel */
 .work { background-image:  url('../assets/panel/work.svg')}
 .store { background-image:  url('../assets/panel/store.svg')}
 .space { background-image:  url('../assets/panel/space.svg')}
 .wallet { background-image:  url('../assets/panel/wallet.svg')}
 .groups { background-image:  url('../assets/panel/groups.svg')}
 .investment { background-image:  url('../assets/panel/investment.svg')}
+
+/* Notifications */
+.noti-1 { background-image:  url('../assets/notifications/1.svg')}
+.noti-2 { background-image:  url('../assets/notifications/2.svg')}
+.noti-3 { background-image:  url('../assets/notifications/3.svg')}
+.noti-4 { background-image:  url('../assets/notifications/4.svg')}
+.noti-5 { background-image:  url('../assets/notifications/5.svg')}
+
+/* Detail */
+.icon_1_1 { background-image:  url('../assets/detail/icon_1_1.svg')}
+.icon_1_2 { background-image:  url('../assets/detail/icon_1_2.svg')}
+.icon_1_3 { background-image:  url('../assets/detail/icon_1_3.svg')}
+.icon_1_4 { background-image:  url('../assets/detail/icon_1_4.svg')}
+.icon_1_5 { background-image:  url('../assets/detail/icon_1_5.svg')}
+.icon_2_1 { background-image:  url('../assets/detail/icon_2_1.svg')}
+.icon_2_2 { background-image:  url('../assets/detail/icon_2_2.svg')}
+.icon_3_1 { background-image:  url('../assets/detail/icon_3_1.svg')}
+.icon_3_2 { background-image:  url('../assets/detail/icon_3_2.svg')}
