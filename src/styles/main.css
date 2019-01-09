@@ -5,24 +5,29 @@
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 
-* {
-    font-family: 'Montserrat', sans-serif;    
+* {    
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #020433;
     text-align: center;
-    overflow: hidden;
-    moz-user-select: -moz-none; 
-    -moz-user-select: none; 
-    -o-user-select:none; 
-    -khtml-user-select:none; 
-    -webkit-user-select:none; 
-    -ms-user-select:none; 
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
     user-select:none;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+*::-webkit-scrollbar {
+    width: 0 !important
+}
+
+html {
     overflow: hidden;
 }
 

@@ -13,6 +13,7 @@ const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
 const enter = e => {
   window.location.hash = '#panel';
   require('./panel');
+  window.location.reload();
 }
 
 // DOM

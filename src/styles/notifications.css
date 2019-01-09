@@ -4,8 +4,6 @@
     background-color: #fefefe;
 }
 
-.safe_notifications {}
-
 .navigator {
     position: fixed;
     top: 0;
@@ -16,6 +14,14 @@
     align-items: center;
 }
 
+.safe_notifications {
+    height: 100%;
+    width: auto;
+    margin: auto;
+    position: relative;
+    top: 17vw;
+}
+
 .left_navigator {
     position: relative;
     width: 1.5em;
@@ -23,7 +29,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    left: 3em;
+    left: 3nem;
 }
 
 .label_navigator {
@@ -32,10 +38,13 @@
     margin: auto;
 }
 
-.notifications_wrapper {
-    height: 100%;
+.read_notifications {
     width: auto;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
-    top: 5em;    
+}
+
+.unread_notifications {
+    margin: 0 auto;
+    position: relative;
 }

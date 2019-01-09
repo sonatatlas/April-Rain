@@ -11,6 +11,7 @@ const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
 const welcome = e => {
   window.location.hash = '#welcome';
   require('./welcome');
+  window.location.reload();
 }
   
 /* DOM */

@@ -43,6 +43,7 @@ let trends = e.i('div', {'class': 'button trends', 'id': 'trends'}, {
     d.id('trends').className = 'button trends';
     window.location.hash = '#notifications';
     require('./notifications');
+    window.location.reload();
   }
 }).t(tab_bar_safe);
 e.i('text', {'class': 'text_tab_bar text_tab_bar_trends'}, {}, `Notificaitions`).t(trends);
