@@ -1,9 +1,4 @@
 /* Origin */
-.page_home {
-    background: center / cover no-repeat url('../assets/bgs/home@2x.png'),
-                linear-gradient(to bottom right, #80efe3 , #16c2c3);
-}
-
 .content_top_home {
     position: relative;
     height: 24em;

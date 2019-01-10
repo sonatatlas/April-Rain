@@ -21,7 +21,6 @@ export function model_noti(id, element, pic, title, sub) {
       d.id(title).style.backgroundColor = '#fff';
       window.location.hash = '#detail';
       router.detail();
-      // require('../views/detail');
     }
   }).t(unread_wrapper);
   // content
@@ -36,6 +35,21 @@ export function model_noti(id, element, pic, title, sub) {
   e.i('div', {'class': 'right_arrow_msg right'}).t(msg);
 }
 
+/* model_card */
+export function model_card_head(element, pic, title, sub) {
+  // content
+  let msg = e.i('div', {'class': 'msg_notifications', 'id': title}).t(element);
+  // left
+  let left_msg = e.i('div', {'class': 'left_msg_notifications'}).t(msg);
+  e.i('div', {'class': `left_msg_pic ${pic}`}).t(left_msg);
+  // right
+  let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
+  e.i('text', {'class': 'right_title_msg'}).p(title).t(right_msg);
+  e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
+  // icon
+  e.i('div', {'class': 'right_arrow_msg_2 arrow'}).t(msg);
+}
+
 /* model a */
 export function model_a(element, pic, title, sub) {
   // wrapper
@@ -46,7 +60,6 @@ export function model_a(element, pic, title, sub) {
       d.id(title).style.backgroundColor = '#fff';
       window.location.hash = '#detail';
       router.detail();
-      // require('../views/detail');
     }
   }).t(element);
   // content
@@ -145,17 +158,21 @@ export function model_e(element, pic, title, sub, cb, flag) {
 
   // animate
   e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);
+  
   if (flag) {
     e.i('div', {'class': 'white_space_detail'}, {}, '&nbsp;').t(d.id('slide_area_detail'));
-    d.id('slide_area_detail').scrollTo({ left: 500, behavior: 'smooth'});
+    d.id('slide_area_detail').scrollTo({ left: 600, behavior: 'smooth'});
   }
-  setTimeout(() => {
-    if (cb != undefined ) { cb() }    
+  
+  setTimeout(() => {    
+    if (cb != undefined ) { cb() }
   }, 1000)
+  
 }
 
 /* model f */
 export function model_f(element, pic, title, sub) {
+  
   // content
   let msg = e.i('div', {'class': 'msg_notifications_f', 'id': title}).t(element);
   // left

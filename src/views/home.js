@@ -1,5 +1,6 @@
 //#home.js
 import {DOM, Element} from '../lib';
+import '../styles/pics.css';
 import '../styles/home.css';
 import { router } from '.';
 

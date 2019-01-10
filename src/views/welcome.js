@@ -1,4 +1,5 @@
 import {DOM, Element} from '../lib';
+import '../styles/pics.css';
 import '../styles/welcome.css';
 import { router } from '.';
 

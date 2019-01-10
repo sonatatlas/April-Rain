@@ -1,0 +1,67 @@
+/* tapp.css */
+.page_tapp {
+    background-color: #fafafa;
+}
+
+.safe_tapp {}
+
+.wrapper_app_tapp {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper_app_tapp_safe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: inherit;
+    padding: 2%;
+    margin: auto;
+    width: 90%;
+}
+
+.safe_notifications {
+    height: 100%;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    top: 12em;
+}
+
+.tapp {
+    height: 26em;
+    width: 26em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    border: 1px solid #54d1ce;
+    background-color: #f9fefe;
+}
+
+.text_tapp {
+    top: 37%;
+    font-size: 2em;
+    position: relative;
+}
+
+.wrapper_icon_tapp {
+    top: 30%;
+    position: relative;
+    margin: auto;
+    width: 7em;
+    height: 7em;
+    border-radius: 66px;
+    background-image:linear-gradient(135deg,#80efe3, #16c2c3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.icon_tapp {
+    margn: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 3em;
+    width: 3.5em;
+}

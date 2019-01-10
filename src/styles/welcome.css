@@ -1,11 +1,4 @@
-.page_welcome {
-    background: center / cover no-repeat url(../assets/bgs/welcome@2x.png);
-}
-
-.logo_finger {
-    background: center / cover no-repeat url(../assets/components/finger.svg);    
-}
-
+/* welcome */
 .content_top_welcome {
     position: relative;
     height: 24em;

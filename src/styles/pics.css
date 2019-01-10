@@ -1,9 +1,28 @@
 /* pics.css */
+/* Background */
+.page_home {
+    background: center / cover no-repeat url('../assets/bgs/home@2x.png'),
+                linear-gradient(to bottom right, #80efe3 , #16c2c3);
+}
+.page_welcome {
+    background: center / cover no-repeat url(../assets/bgs/welcome@2x.png);
+}
+
+.logo_finger {
+    background: center / cover no-repeat url(../assets/components/finger.svg);    
+}
+
+.card_a_wrapper_bg {
+    background: center / 50% 40% no-repeat url('../assets/detail/bg.png'),
+                center no-repeat linear-gradient(to bottom right, #80efe3 , #16c2c3);
+}
+
 
 /* Components */
 .left { background-image:  url('../assets/components/left.svg')}
 .right { background-image:  url('../assets/components/right.svg')}
 .right_white { background-image:  url('../assets/components/right_white.svg')}
+.arrow { background-image:  url('../assets/components/arrow.svg')}
 
 /* Panel */
 .work { background-image:  url('../assets/panel/work.svg')}
@@ -30,3 +49,10 @@
 .icon_2_2 { background-image:  url('../assets/detail/icon_2_2.svg')}
 .icon_3_1 { background-image:  url('../assets/detail/icon_3_1.svg')}
 .icon_3_2 { background-image:  url('../assets/detail/icon_3_2.svg')}
+
+/* Tapp */
+.Time { background-image:  url('../assets/tapp/Time Asst.svg')}
+.Health { background-image:  url('../assets/tapp/Health Asst.svg')}
+.Devices { background-image:  url('../assets/tapp/Devices Asst.svg')}
+.Routines { background-image:  url('../assets/tapp/Routines Asst.svg')}
+

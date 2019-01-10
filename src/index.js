@@ -1,4 +1,5 @@
 import './styles/main.css';
+import './styles/pics.css';
 import {Element, Router, Scroller} from './lib';
 import { router } from './views';
 

@@ -1,14 +1,18 @@
 /* router */
+import home from './home';
+import tapp from './tapp';
+import panel from './panel';
+import detail from './detail';
+import stream from './stream';
 import welcome from './welcome';
 import notifications from './notifications';
-import detail from './detail';
-import home from './home';
-import panel from './panel';
 
 export const router = {
   home: home,
-  welcome: welcome,
+  tapp: tapp,
   panel: panel,
+  stream: stream,
   detail: detail,
+  welcome: welcome,
   notifications: notifications
 }

@@ -1,17 +1,7 @@
 /* notifications.css */
 .page_notifications {
     /* #fafafa */
-    background-color: #fefefe;
-}
-
-.navigator {
-    position: fixed;
-    top: 0;
-    width: 92%;
-    margin: 0 4vw;
-    height: 10em;
-    display: flex;
-    align-items: center;
+    background-color: #fafafa;
 }
 
 .safe_notifications {
@@ -19,7 +9,7 @@
     width: auto;
     margin: auto;
     position: relative;
-    top: 17vw;
+    top: 12em;
 }
 
 .left_navigator {
@@ -32,15 +22,9 @@
     left: 3nem;
 }
 
-.label_navigator {
-    font-size: 2.5em;
-    font-weight: 900;
-    margin: auto;
-}
-
 .read_notifications {
     width: auto;
-    margin: 0 auto;
+    margin: 0;
     position: relative;
 }
 

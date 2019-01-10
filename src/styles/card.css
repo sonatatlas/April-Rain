@@ -1,10 +1,7 @@
+
 /* model.css */
 
 /* model_noti */
-.unread_wrapper {
-    
-}
-
 .msg_wrapper_right {
     position: relative;
     left: 8vw;
@@ -32,7 +29,8 @@
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
     background-color:#fff;
     border-radius: 15px;
-    margin: 2.5em 5vw;
+    margin: 0em 5vw;
+    margin-bottom: 5vw;
 }
 
 .msg_notifications {
@@ -89,6 +87,16 @@
     right: 5vw;
     width: 1.5em;
     height: 2.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.right_arrow_msg_2 {
+    position: absolute;
+    right: 5vw;
+    width: 2em;
+    height: 3em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -243,7 +251,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: scroll;
 }
 
 .big_title_msg_d {
@@ -259,12 +266,11 @@
     bottom: 2vw;
     position: relative;
     display: flex;
+    flex-direction: row;
     width: auto;
     white-space: nowrap;
+    overflow: hidden;
     overflow-x: scroll;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-overflow-scrolling: touch;
     text-align: justify;
     margin-right: 5vw;
     margin-left: 5vw;
@@ -289,7 +295,6 @@
     margin: 2.5em 10px;
     margin-right: 5vw;
     animation: slide_in .3s;
-    /* overflow: scroll; */
     -webkit-animation: slide_in .3s;
 }
 

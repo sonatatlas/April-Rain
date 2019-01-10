@@ -11,7 +11,6 @@ import { router } from '.';
 /* const */
 const d = new DOM();
 const e = new Element();
-const s = new Scroller();
 
 const list = [
   ['Healthier body', 'noti-1', '3 health inidicator improved'],
@@ -47,8 +46,6 @@ export default function notifications(){
     'touchend': () => {
       window.location.hash = '#panel';
       router.panel();
-      // require('./panel');
-      // window.location.reload();
     }
   }).t(navigator);
   e.i('div', {'class': 'label_navigator'}, {}, 'Notifications').t(navigator);
@@ -60,8 +57,6 @@ export default function notifications(){
   }).t(page_notifications);
   let unread_notifications = e.i('div', {'class': 'unread_notifications'}).t(safe_notifications);
   let read_notifications = e.i('div', {'class': 'read_notifications'}).t(safe_notifications);
-
-  s.touchScroll('safe_notifications');
 
   //@deploy
   msgChecker(unread_notifications, read_notifications);
