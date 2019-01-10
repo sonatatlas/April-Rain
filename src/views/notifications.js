@@ -6,6 +6,7 @@ import {DOM, Element, Scroller} from '../lib';
 import {model_a, model_noti} from '../model/card';
 import '../styles/notifications.css';
 import '../styles/pics.css';
+import { router } from '.';
 
 /* const */
 const d = new DOM();
@@ -20,9 +21,6 @@ const list = [
   ['Statistics', 'noti-5', 'sub']
 ];
 
-/* Init */
-d.id('tachion').innerHTML = '';
-
 /* Function */
 function msgChecker(unread, read) {
   for (let i in list) {
@@ -35,30 +33,36 @@ function msgChecker(unread, read) {
   }
 }
 
-/* DOM */
-//@structure
-let page_notifications = e.i('section', {'class': 'page page_notifications'}).t(d.id('tachion'));
+/* Init */
+export default function notifications(){
+  d.id('tachion').innerHTML = '';
 
-//@navigator
-let navigator = e.i('div', {'class': 'navigator'}).t(page_notifications);
-e.i('div', {'class': 'left left_navigator'}, {
-  'touchstart': () => {
-    window.location.hash = '#panel';
-    require('./panel');
-    window.location.reload();
-  }
-}).t(navigator);
-e.i('div', {'class': 'label_navigator'}, {}, 'Notifications').t(navigator);
+  /* DOM */
+  //@structure
+  let page_notifications = e.i('section', {'class': 'page page_notifications'}).t(d.id('tachion'));
 
-//@notifications-wrapper
-let safe_notifications = e.i('div', {
-  'id': 'safe_notifications',
-  'class': 'safe safe_notifications'
-}).t(page_notifications);
-let unread_notifications = e.i('div', {'class': 'unread_notifications'}).t(safe_notifications);
-let read_notifications = e.i('div', {'class': 'read_notifications'}).t(safe_notifications);
+  //@navigator
+  let navigator = e.i('div', {'class': 'navigator'}).t(page_notifications);
+  e.i('div', {'class': 'left left_navigator'}, {
+    'touchend': () => {
+      window.location.hash = '#panel';
+      router.panel();
+      // require('./panel');
+      // window.location.reload();
+    }
+  }).t(navigator);
+  e.i('div', {'class': 'label_navigator'}, {}, 'Notifications').t(navigator);
 
-s.touchScroll('safe_notifications');
+  //@notifications-wrapper
+  let safe_notifications = e.i('div', {
+    'id': 'safe_notifications',
+    'class': 'safe safe_notifications'
+  }).t(page_notifications);
+  let unread_notifications = e.i('div', {'class': 'unread_notifications'}).t(safe_notifications);
+  let read_notifications = e.i('div', {'class': 'read_notifications'}).t(safe_notifications);
 
-//@deploy
-msgChecker(unread_notifications, read_notifications);
+  s.touchScroll('safe_notifications');
+
+  //@deploy
+  msgChecker(unread_notifications, read_notifications);
+}

@@ -8,6 +8,7 @@
     top: 10em;
     position: relative;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .navigator {
@@ -63,4 +64,9 @@
 .white_space_detail {
     display: relative;
     width: 3vw;
+}
+
+.column_space {
+    height: 15vw;
+    width: auto;
 }

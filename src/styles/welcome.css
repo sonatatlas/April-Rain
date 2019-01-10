@@ -42,10 +42,10 @@
 
 /* Phone */
 @media (min-device-height: 750px) {
-    .content_top_welcome { margin-top: 13em }
+    .content_top_welcome { padding-top: 13em }
 }
 @media (max-device-height: 750px) {
-    .content_top_welcome { margin-top: 6em }
+    .content_top_welcome { padding-top: 6em }
 }
 
 /* Pad */

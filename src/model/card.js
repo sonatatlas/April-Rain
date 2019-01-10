@@ -1,5 +1,6 @@
 /* model.js */
 import {DOM, Element} from '../lib';
+import { router } from '../views';
 import '../styles/card.css';
 import '../styles/pics.css';
 
@@ -19,7 +20,8 @@ export function model_noti(id, element, pic, title, sub) {
       window.sessionStorage.setItem(id, true);
       d.id(title).style.backgroundColor = '#fff';
       window.location.hash = '#detail';
-      require('../views/detail');
+      router.detail();
+      // require('../views/detail');
     }
   }).t(unread_wrapper);
   // content
@@ -43,7 +45,8 @@ export function model_a(element, pic, title, sub) {
     }, 'touchend': () => {
       d.id(title).style.backgroundColor = '#fff';
       window.location.hash = '#detail';
-      require('../views/detail');
+      router.detail();
+      // require('../views/detail');
     }
   }).t(element);
   // content
@@ -137,15 +140,17 @@ export function model_e(element, pic, title, sub, cb, flag) {
   // icon
   let judge_circle = e.i('text', {
     'id': `judge_circle_e_${title}`,
-    'class': 'right_arrow_msg_e_filled'
+    'class': 'right_arrow_msg_e icon_2_2'
   }).t(msg);
 
   // animate
   e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);
-  flag?d.id('slide_area_detail').scrollTo({ left: 1000, behavior: 'smooth'}):'';
+  if (flag) {
+    e.i('div', {'class': 'white_space_detail'}, {}, '&nbsp;').t(d.id('slide_area_detail'));
+    d.id('slide_area_detail').scrollTo({ left: 500, behavior: 'smooth'});
+  }
   setTimeout(() => {
-    d.id(`judge_circle_e_${title}`).className = "right_arrow_msg_e icon_2_2";
-    if (cb != undefined ) { cb() }
+    if (cb != undefined ) { cb() }    
   }, 1000)
 }
 
