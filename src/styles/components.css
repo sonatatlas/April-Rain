@@ -87,7 +87,7 @@
 
 .card_grey_font {
     color: #aab2b7;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .card_little_pic {
@@ -96,6 +96,18 @@
     margin: 0 0.5em;
     background-repeat: no-repeat;
     background-size: 1.5em 1.7em;
+    background-position: center;
+}
+
+.card_middle_pic {
+    width: 2.5em;
+    height: 2.5em;
+    border: 3px solid #89efe3;
+    margin-left: 2em;
+    margin-right: 1em;
+    border-radius: 66px;
+    background-repeat: no-repeat;
+    background-size: 60%;
     background-position: center;
 }
 
@@ -113,7 +125,31 @@
     margin: 0 5vw;
 }
 
+.card_fall_words_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 5vw;
+}
+
+.pic_and_words_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 5vw;
+    margin-top: 2em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_fall_words_wrapper, .pic_and_words_wrapper > div {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+}
+
 .card_creep_words_wrapper > div {
+    color: #aab2b7;
     font-size: 1.8em;
     line-height: 2em;
     margin-right: 1em;

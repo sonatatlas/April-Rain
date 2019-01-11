@@ -50,6 +50,10 @@ export default function tapp(){
   //@deploy
   msgChecker(unread_notifications, read_notifications);
 
+  //@breaker
+  let breaker = e.i('div', {'class': 'breaker_tapp'}, {},
+  'Assistants for your daily life').t(safe_tapp);
+  
   //@app-wrapper
   let wrapper_app_tapp = e.i('div', {'class': 'wrapper_app_tapp'}).t(safe_tapp);
   let wrapper_app_tapp_safe = e.i('div', {'class': 'wrapper_app_tapp_safe'}).t(wrapper_app_tapp);

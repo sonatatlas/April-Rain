@@ -82,7 +82,7 @@ export function model_a(element, pic, title, sub) {
 }
 
 /* model b */
-export function model_b(element, pic, title, sub) {
+export function model_b(element, pic, title, sub, cb) {
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_b'}).t(element);
   // content
@@ -94,16 +94,16 @@ export function model_b(element, pic, title, sub) {
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
   e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg_b'}).p(sub).t(right_msg);
-  e.i('div', {'class': 'right_arrow_msg right_white'}).t(msg);
+  e.i('div', {'class': 'right_arrow_msg right_white'}, {
+    'touchend': () => {cb?cb():''}
+  }).t(msg);
 }
 
 /* model c */
 export function model_c(element, pic, title, sub) {
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_c'}, {
-    'touchstart': () => {
-    }, 'touchend': () => {
-    }
+    'touchstart': () => {}, 'touchend': () => {}
   }).t(element);
   // content
   let msg = e.i('div', {'class': 'msg_notifications_c', 'id': title}).t(msg_wrapper);
@@ -117,11 +117,11 @@ export function model_c(element, pic, title, sub) {
 }
 
 /* model d */
-export function model_d(element, pic, title, sub1, sub2, cb) {
+export function model_d(element, pic, title, sub1, sub2, cb, cb2) {
   /* wrapper */
-  let msg_wrapper = e.i('div', {'class': 'msg_wrapper_d'}, {
+  let msg_wrapper = e.i('div', {'class': 'msg_wrapper_d', 'id': 'slide_controller'}, {
     'touchstart': () => {}, 'touchend': () => {
-      d.id('judge_circle').className = "right_arrow_msg_d icon_2_2";
+      if (cb2 != undefined) { cb2(); }
     }
   }).t(element);
   e.i('div', {'class': 'big_title_msg_d'}, {},
@@ -139,20 +139,25 @@ export function model_d(element, pic, title, sub1, sub2, cb) {
   let judge_circle = e.i('text', {
     'id': 'judge_circle', 'class': 'right_arrow_msg_d_filled'
   }, {
-    'touchend': () => {
+    'touchend': (e) => {
+      if(e && e.stopPropagation){ e.stopPropagation();}
+      // d.id('judge_circle').className = "right_arrow_msg_d icon_2_2x";
+      // d.id('judge_circle').style='pointer-events: none;';
+      d.id('judge_circle').parentNode.removeChild(d.id('judge_circle'));
       setTimeout(() => {
-        d.id('judge_circle').className = "right_arrow_msg_d icon_2_2";
-        if (cb != undefined ) { cb() }
-      }, 1000);
+        if (cb != undefined) { cb(); }
+      }, 300);
     }
   }).t(msg);
-  e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);  
+  e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);
 }
 
 /* model e */
-export function model_e(element, pic, title, sub, cb, flag) {
+export function model_e(element, pic, title, sub, cb, cb2, flag) {
   // wrapper
-  let msg_wrapper = e.i('div', {'class': 'msg_wrapper_e', 'id': title}).t(element);
+  let msg_wrapper = e.i('div', {'class': 'msg_wrapper_e', 'id': title}, {
+    'touchend': () => cb?cb():''
+  }).t(element);
   // content
   let msg = e.i('div', {'class': 'msg_notifications_d'}).t(msg_wrapper);
   // right
@@ -164,7 +169,6 @@ export function model_e(element, pic, title, sub, cb, flag) {
     'id': `judge_circle_e_${title}`,
     'class': 'right_arrow_msg_e icon_2_2'
   }).t(msg);
-
   // animate
   e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);
   
@@ -174,7 +178,7 @@ export function model_e(element, pic, title, sub, cb, flag) {
   }
   
   setTimeout(() => {    
-    if (cb != undefined ) { cb() }
+    if (cb2 != undefined ) { cb2() }
   }, 1000)
   
 }

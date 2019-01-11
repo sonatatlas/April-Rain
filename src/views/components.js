@@ -77,15 +77,52 @@ function creep_words(el) {
   }
 }
 
+function body_fall_words(el, word1, word2) {
+  let line_wrapper = e.i('div', {'class': 'card_fall_words_wrapper'}).t(el);
+  e.i('div', {'class': 'card_normal_words'}, {}, word1).t(line_wrapper);
+  e.i('div', {'class': 'card_grey_font'}, {}, word2).t(line_wrapper);
+}
+
 function body_a(el) {
   body_top_array(el);
   body_middle_pic(el);
   creep_words(el);
 }
 
-export function model(el) {
+function body_b(el) {
+  body_top_array(el);
+  creep_words(el);
+  body_middle_pic(el);
+}
+
+export function card_model_a(el) {
   let body_wrapper = model_wrapper_generator(el);
   body_a(body_wrapper);
   e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
   body_a(body_wrapper);
+}
+
+export function card_model_b(el) {
+  let body_wrapper = model_wrapper_generator(el);
+  body_b(body_wrapper);
+  body_fall_words(body_wrapper, 'Data type', 'anonymous');
+  body_fall_words(body_wrapper, 'Pay frequency', 'weekly');
+  body_fall_words(body_wrapper, 'Physical check-up discount coupon');
+}
+
+function pic_and_words(el) {
+  let wrapper = e.i('div', {'class': 'pic_and_words_wrapper'}).t(el);
+  e.i('div', {'class': 'card_middle_pic icon_2_2'}).t(wrapper);
+  e.i('div', {'class': 'card_normal_font'}, {
+  }, 'Service registered on this flow').t(wrapper);
+}
+
+export function card_model_c(el) {
+  let body_wrapper = model_wrapper_generator(el);
+  body_top_array(body_wrapper);
+  body_fall_words(body_wrapper, 'Pay frequency', 'weekly');
+  body_fall_words(body_wrapper, 'Physical check-up discount coupon');
+  e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
+  pic_and_words(body_wrapper);
+  pic_and_words(body_wrapper);
 }

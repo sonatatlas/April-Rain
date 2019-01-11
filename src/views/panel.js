@@ -23,7 +23,7 @@ export default function panel(){
   //@app-wrapper
   let wrapper_app_panel = e.i('div', {'class': 'wrapper_app_panel'}).t(safe_panel);
   let wrapper_app_panel_safe = e.i('div', {'class': 'wrapper_app_panel_safe'}).t(wrapper_app_panel);
-  let apps = ['space', 'groups', 'store', 'work', 'wallet', 'investment'];
+  let apps = ['space', 'groups', 'store', 'work', 'wallet', 'about'];
   for (let i in apps) {
     let app = e.i('div', {'class': `app ${apps[i]}`, 'id': `${apps[i]}`}, {
       'passive': () => {

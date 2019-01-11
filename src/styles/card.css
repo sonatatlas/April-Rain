@@ -19,7 +19,7 @@
     left: 5vw;
     height: 3vw;
     width: 3vw;
-    background-image:linear-gradient(135deg,#80efe3, #16c2c3);    
+    background-image:linear-gradient(135deg,#80efe3, #16c2c3);
 }
 
 /* model_a */
@@ -33,9 +33,9 @@
 }
 
 .msg_notifications {
-    position: relative;
     padding: 5vw;
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;    
 }
@@ -86,9 +86,10 @@
     right: 5vw;
     width: 1.5em;
     height: 2.5em;
+    padding: 3em;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
+    background-size: 20%;
+    background-position: right;
 }
 
 .right_arrow_msg_2 {
@@ -213,23 +214,23 @@
 
 .left_msg_pic_d {
     margn: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     height: 3em;
     width: 3.6em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .right_arrow_msg_d {
-    position: absolute;
     right: 5vw;
     width: 8em;
     height: 8em;
-    border: 2px solid #80efe3;
+    position: absolute;
     border-radius: 66px;
-    background-repeat: no-repeat;
     background-size: 50%;
+    border: 2px solid #80efe3;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .right_arrow_msg_d_filled {

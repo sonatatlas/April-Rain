@@ -3,7 +3,7 @@
  **/
 //#home.js
 import { router } from '.';
-import { model, navigator } from './components';
+import { card_model_a, card_model_b, card_model_c, navigator } from './components';
 import { DOM, Element } from '../lib';
 import { model_b, model_c, model_d, model_e, model_f } from './card';
 import '../styles/detail.css';
@@ -27,7 +27,7 @@ export default function detail() {
     e.i('div', {'class': 'column_space'}).p('').t(element);
     element.element.scrollTo({top: 1000, behavior: 'smooth'});
   }
-
+  
   function slide_area(element) {
     let wrapper = e.i('div', {
       'class': 'slide_area_detail', 'id': 'slide_area_detail'
@@ -36,14 +36,15 @@ export default function detail() {
       'icon_1_5',
       'Privacy protection',
       'data anonymization',
+      () => card_model_c(page_detail),
       () => {
         model_e(wrapper,
           'icon_1_5',
-          'Contract auditiing & signing',
           'verify & auditing & signed',
-          () => {
-            last_block(safe_detail);
-          }, true
+          'Contract auditiing & signing',
+          () => card_model_c(page_detail),
+          () => last_block(safe_detail),
+          true
         );
       }
     );
@@ -59,12 +60,10 @@ export default function detail() {
   //@card_a
   let card_a_wrapper = e.i('div', {
     'class': 'card_a_wrapper card_a_wrapper_bg'
-  }, {
-    'touchend': () => {
-      model(page_detail);
-    }
-  }).t(safe_detail);
-  model_b(card_a_wrapper, 'icon_1_1', 'Healthier body', '3 health indicator improved');
+  }, {'touchend': () => {}}).t(safe_detail);
+  model_b(card_a_wrapper, 'icon_1_1', 'Healthier body', '3 health indicator improved',
+    () => card_model_a(page_detail)
+  );
   e.i('div', {'class': 'br'}).t(card_a_wrapper);
   model_c(card_a_wrapper, 'icon_1_2', 'Healthier heart', 'Resting heart raxte lower -10%');
   model_c(card_a_wrapper, 'icon_1_3', 'Good shape', 'BMI lower -5%');
@@ -74,6 +73,7 @@ export default function detail() {
     '3 vital data for 3 month',
     '$10 per week plus physical',
     'check-up discount',
-    () => slide_area(safe_detail)
+    () => slide_area(safe_detail),
+    () => card_model_b(page_detail)
   );
 }
