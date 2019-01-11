@@ -5,7 +5,7 @@
 import { router } from '.';
 import { model, navigator } from './components';
 import { DOM, Element } from '../lib';
-import { model_b, model_c, model_d, model_e, model_f } from '../model/card';
+import { model_b, model_c, model_d, model_e, model_f } from './card';
 import '../styles/detail.css';
 import '../styles/pics.css';
 
@@ -24,7 +24,7 @@ export default function detail() {
       'icon_3_1', 'Received 1st payment', '$10 will received more upcoming weeks');
     e.i('div', {'class': 'br_black'}).t(model_f_wrapper);
     model_f(model_f_wrapper, 'icon_3_2', 'Discount coupon received', 'clicked to see detail');
-    e.i('div', {'class': 'column_space'}).p('&nbsp;').t(element);
+    e.i('div', {'class': 'column_space'}).p('').t(element);
     element.element.scrollTo({top: 1000, behavior: 'smooth'});
   }
 
@@ -41,7 +41,7 @@ export default function detail() {
           'icon_1_5',
           'Contract auditiing & signing',
           'verify & auditing & signed',
-          () => {            
+          () => {
             last_block(safe_detail);
           }, true
         );
@@ -52,11 +52,10 @@ export default function detail() {
   /* DOM */
   //@navigator
   navigator('panel', 'Healthier body');
-
   //@structure
   let page_detail = e.i('section', {'class': 'page page_detail'}).t(d.id('tachion'));
   let safe_detail = e.i('div', {'class': 'safe safe_detail'}).t(page_detail);
-  // model(page_detail);
+
   //@card_a
   let card_a_wrapper = e.i('div', {
     'class': 'card_a_wrapper card_a_wrapper_bg'

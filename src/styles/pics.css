@@ -17,7 +17,6 @@
                 center no-repeat linear-gradient(to bottom right, #80efe3 , #16c2c3);
 }
 
-
 /* Components */
 .left { background-image:  url('../assets/components/left.svg')}
 .right { background-image:  url('../assets/components/right.svg')}
@@ -56,3 +55,6 @@
 .Devices { background-image:  url('../assets/tapp/Devices Asst.svg')}
 .Routines { background-image:  url('../assets/tapp/Routines Asst.svg')}
 
+/* Model */
+.foot_health { background-image:  url('../assets/model/foot_health.svg')}
+.chart {background-image:  url('../assets/model/chart.svg')}
