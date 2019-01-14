@@ -2,7 +2,6 @@
 import {DOM, Element} from '../lib';
 import '../styles/pics.css';
 import '../styles/home.css';
-import { router } from '.';
 
 /* const */
 const e = new Element();
@@ -11,8 +10,6 @@ const d = new DOM();
 /* methods */
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
 const welcome = e => {
-  console.log('touched');
-  router.welcome();
   window.location.hash = '#welcome';
   // require('./welcome');
   // window.location.reload();

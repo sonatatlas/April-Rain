@@ -5,7 +5,7 @@
 import {DOM, Element} from '../lib';
 import '../styles/panel.css';
 import '../styles/pics.css';
-import { router } from '.';
+import data from './data.json';
 
 /* const */
 const d = new DOM();
@@ -23,15 +23,18 @@ export default function panel(){
   //@app-wrapper
   let wrapper_app_panel = e.i('div', {'class': 'wrapper_app_panel'}).t(safe_panel);
   let wrapper_app_panel_safe = e.i('div', {'class': 'wrapper_app_panel_safe'}).t(wrapper_app_panel);
-  let apps = ['space', 'groups', 'store', 'work', 'wallet', 'about'];
+  let apps = ['space', 'social', 'store', 'work', 'wallet', 'about'];
   for (let i in apps) {
     let app = e.i('div', {'class': `app ${apps[i]}`, 'id': `${apps[i]}`}, {
       'passive': () => {
         d.id(apps[i]).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
       }, 'touchend': () => {
         d.id(apps[i]).style.backgroundColor = '#fff';
-        router.tapp();
-        window.location.hash = '#tapp';
+        if(apps[i] === 'about') {
+          window.location.hash = '#detail?tapp=about';
+        } else {
+          window.location.hash = `#tapp?tapp=${apps[i]}`;
+        }
       }
     }).t(wrapper_app_panel_safe);
     e.i('text', {'class': 'text_app'}, {}, `${apps[i]}`).t(app);
@@ -46,7 +49,6 @@ export default function panel(){
     }, 'touchend': () => {
       d.id('trends').className = 'button trends';
       window.location.hash = '#notifications';
-      router.notifications();
     }
   }).t(tab_bar_safe);
   e.i('text', {'class': 'text_tab_bar text_tab_bar_trends'}, {}, `Notificaitions`).t(trends);

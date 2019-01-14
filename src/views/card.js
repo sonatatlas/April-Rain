@@ -1,39 +1,13 @@
+
 /* model.js */
 import {DOM, Element} from '../lib';
 import { router } from '../views';
 import '../styles/card.css';
 import '../styles/pics.css';
 
-/* const */
+/*g const */
 const d = new DOM();
 const e = new Element();
-
-/* model for notifications */
-export function model_noti(id, element, pic, title, sub) {
-  // wrapper
-  let unread_wrapper = e.i('div', {'class': 'unread_wrapper'}).t(element);
-  let unread_dot = e.i('div', {'class': 'unread_dot'}).t(unread_wrapper);
-  let msg_wrapper = e.i('div', {'class': 'msg_wrapper_right'}, {
-    'touchstart': () => {
-      d.id(title).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
-    }, 'touchend': () => {
-      window.sessionStorage.setItem(id, true);
-      d.id(title).style.backgroundColor = '#fff';
-      window.location.hash = '#detail';
-      router.detail();
-    }
-  }).t(unread_wrapper);
-  // content
-  let msg = e.i('div', {'class': 'msg_notifications', 'id': title}).t(msg_wrapper);
-  // left
-  let left_msg = e.i('div', {'class': 'left_msg_notifications'}).t(msg);
-  e.i('div', {'class': `left_msg_pic ${pic}`}).t(left_msg);
-  // right
-  let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
-  e.i('div', {'class': 'right_arrow_msg right'}).t(msg);
-}
 
 /* model_card */
 export function model_card_head(element, pic, title, sub) {
@@ -56,30 +30,6 @@ export function model_card_head(element, pic, title, sub) {
   }).t(msg);
 }
 
-/* model a */
-export function model_a(element, pic, title, sub) {
-  // wrapper
-  let msg_wrapper = e.i('div', {'class': 'msg_wrapper'}, {
-    'touchstart': () => {
-      d.id(title).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
-    }, 'touchend': () => {
-      d.id(title).style.backgroundColor = '#fff';
-      window.location.hash = '#detail';
-      router.detail();
-    }
-  }).t(element);
-  // content
-  let msg = e.i('div', {'class': 'msg_notifications', 'id': title}).t(msg_wrapper);
-  // left
-  let left_msg = e.i('div', {'class': 'left_msg_notifications'}).t(msg);
-  e.i('div', {'class': `left_msg_pic ${pic}`}).t(left_msg);
-  // right
-  let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
-  // icon
-  e.i('div', {'class': 'right_arrow_msg right'}).t(msg);
-}
 
 /* model b */
 export function model_b(element, pic, title, sub, cb) {
@@ -113,7 +63,7 @@ export function model_c(element, pic, title, sub) {
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
   e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg_b'}).p(sub).t(right_msg);
+  e.i('text', {'class': 'right_osub_msg_b'}).p(sub).t(right_msg);
 }
 
 /* model d */
@@ -163,7 +113,7 @@ export function model_e(element, pic, title, sub, cb, cb2, flag) {
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
   e.i('text', {'class': 'right_title_msg_e'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
+  e.i('text', {'class': 'right_title_msg'}).p(sub).t(right_msg);
   // icon
   let judge_circle = e.i('text', {
     'id': `judge_circle_e_${title}`,

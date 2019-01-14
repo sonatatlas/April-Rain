@@ -34,14 +34,14 @@ export default function detail() {
     }).t(element);
     model_e(wrapper,
       'icon_1_5',
-      'Privacy protection',
-      'data anonymization',
+      'Privacy',
+      'protection',
       () => card_model_c(page_detail),
       () => {
         model_e(wrapper,
           'icon_1_5',
-          'verify & auditing & signed',
-          'Contract auditiing & signing',
+          'verify & auditing',
+          '& signed',
           () => card_model_c(page_detail),
           () => last_block(safe_detail),
           true
@@ -65,9 +65,8 @@ export default function detail() {
     () => card_model_a(page_detail)
   );
   e.i('div', {'class': 'br'}).t(card_a_wrapper);
-  model_c(card_a_wrapper, 'icon_1_2', 'Healthier heart', 'Resting heart raxte lower -10%');
-  model_c(card_a_wrapper, 'icon_1_3', 'Good shape', 'BMI lower -5%');
-  model_c(card_a_wrapper, 'icon_1_4', 'More energetic', 'VO2max raised +3%');
+  model_c(card_a_wrapper, 'icon_1_2', 'Healthier heart');
+  model_c(card_a_wrapper, 'icon_1_3', 'Good shape');
 
   model_d(safe_detail, 'icon_1_5',
     '3 vital data for 3 month',

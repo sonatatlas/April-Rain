@@ -1,0 +1,64 @@
+{
+  "space": {
+    "tapp": "space",
+    "noti": "Healthier body!",
+    "sub": "3 health indicator improved!",
+    "explain": "Assistants for your life",
+    "services": [
+      "Health",
+      "Routine",
+      "news",
+      "Entertainment"
+    ]
+  }, "social": {
+    "tapp": "social",
+    "noti": "Anniversary is coming!",
+    "sub": "In 2 days, let's prepare fot it!",
+    "explain": "Assistants for your social life",
+    "services": [
+      "Relationship",
+      "Chats",
+      "Social media",
+      "Meetup"
+    ]
+  }, "store": {
+    "tapp": "store",
+    "noti": "Get ready for the trip",
+    "sub": "Cusstomized diving suit",
+    "explain": "Assistants for spending money wisely",
+    "services": [
+      "Shopping",
+      "Renting",
+      "Flea Market",
+      "Travel"
+    ]
+  }, "work": {
+    "tapp": "work",
+    "noti": "Re-schedule your work!",
+    "sub": "Just enjoy your trip",
+    "explain": "Assistants for a productive working life",
+    "services": [
+      "Opportunity",
+      "Arrangement",
+      "Task",
+      "Education"
+    ]
+  }, "wallet": {
+    "tapp": "wallet",
+    "noti": "New investment assistant!",
+    "sub": "Make wiser investment choices",
+    "explain": "Assistants for a wealthy life",
+    "services": [
+      "Money",
+      "Assets",
+      "Budget",
+      "Investment"
+    ]
+  }, "about": {
+    "tapp": "",
+    "noti": "",
+    "sub": "",
+    "explain": "",
+    "services": ""
+  }
+}

@@ -51,7 +51,10 @@ export default class Element {
 
   //@method 't' - tree
   t(father) {
-    father.element? father = father.element :'';
+    if(father.element) {
+      father = father.element;
+    }
+
     father.appendChild(this.element);
 
     return this;

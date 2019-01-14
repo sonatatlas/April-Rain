@@ -2,6 +2,7 @@ import './styles/main.css';
 import './styles/pics.css';
 import {Element, Router, Scroller} from './lib';
 import { router } from './views';
+import data from './views/data.json';
 
 // service-worker
 if ('serviceWorker' in navigator) {
@@ -41,13 +42,14 @@ const popstate = () => {
   // navigator;
   let hash = window.location.hash.match(/#.*/);
   if(hash){
-    router[hash[0].slice(1)]();
-    //hash[0].match(/\?/)?
-    // r.route(hash[0].slice(1, hash[0].indexOf('?'))):
-    // r.route(hash[0].slice(1));
+    if (hash[0].match(/\?/)) {
+      let page_data = data[hash[0].slice(hash[0].indexOf('=')).slice(1)];
+      router[hash[0].slice(1, hash[0].indexOf('?'))](page_data);
+    } else {
+      router[hash[0].slice(1)]();
+    }
   } else {
-    router.home();
-    // r.route('home');
+    router['home']
   }
 }
 

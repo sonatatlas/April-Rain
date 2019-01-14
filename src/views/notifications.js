@@ -3,31 +3,58 @@
  **/
 //#home.js
 import {DOM, Element, Scroller} from '../lib';
-import {model_a, model_noti} from '../model/card';
+import {  } from '../model/card';
 import '../styles/notifications.css';
 import '../styles/pics.css';
 import { router } from '.';
+import data from './data.json';
+
+function model_a(tapp, noti, sub) {
+  // wrapper
+  let msg_wrapper = e.i('div', {'class': 'msg_wrapper'}, {
+    'touchstart': () => {
+      d.id(tapp).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
+    }, 'touchend': () => {
+      d.id(tapp).style.backgroundColor = '#fff';
+      window.location.hash = `#detail?tapp=${tapp}`;
+    }
+  });
+  // content
+  let msg = e.i('div', {'class': 'msg_notifications', 'id': tapp}).t(msg_wrapper);
+  // left
+  let left_msg = e.i('div', {'class': 'left_msg_notifications'}).t(msg);
+  e.i('div', {'class': `left_msg_pic noti_${tapp}`}).t(left_msg);
+  // right
+  let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
+  e.i('text', {'class': 'right_title_msg'}).p(noti).t(right_msg);
+  e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
+  // icon
+  e.i('div', {'class': 'right_arrow_msg right'}).t(msg);
+  return msg_wrapper;
+}
+
+function model_noti() {
+  let unread_wrapper = e.i('div', {'class': 'unread_wrapper'});
+  let unread_dot = e.i('div', {'class': 'unread_dot'}).t(unread_wrapper);
+  return unread_wrapper;
+}
 
 /* const */
 const d = new DOM();
 const e = new Element();
 
-const list = [
-  ['Healthier body', 'noti-1', '3 health inidicator improved'],
-  ['Productivity increased!', 'noti-2', 'sub'],
-  ['Need more rest', 'noti-3', 'sub'],
-  ['Comments', 'noti-4', 'sub'],
-  ['Statistics', 'noti-5', 'sub']
-];
-
 /* Function */
 function msgChecker(unread, read) {
-  for (let i in list) {
-    let flag = list[i];
-    if(window.sessionStorage.getItem(flag[0])) {
-      model_a(read, flag[1], flag[0], flag[2]);
+  for (let i in data) {
+    if(i === 'about'){ break; }
+    let flag = data[i];
+    if(window.sessionStorage.getItem(flag.tapp)) {
+      model_a(flag.tapp, flag.noti, flag.sub).t(read);
     } else {
-      model_noti(flag[0], unread, flag[1], flag[0], flag[2]);
+      let noti = model_noti().t(unread);
+      let noti_list = model_a(flag.tapp, flag.noti, flag.sub);
+      noti_list.element.className = 'msg_wrapper_right';
+      noti_list.t(noti);
     }
   }
 }

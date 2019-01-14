@@ -1,7 +1,6 @@
 import {DOM, Element} from '../lib';
 import '../styles/pics.css';
 import '../styles/welcome.css';
-import { router } from '.';
 
 // const
 const e = new Element();
@@ -9,12 +8,7 @@ const d = new DOM();
 
 // functions
 const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
-const enter = e => {
-  window.location.hash = '#panel';
-  router.panel();
-  // require('./panel');
-  // window.location.reload();
-}
+const enter = e => window.location.hash = '#panel';
 
 // DOM
 export default function welcome() {
