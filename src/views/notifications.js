@@ -16,6 +16,7 @@ function model_a(tapp, noti, sub) {
       d.id(tapp).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
     }, 'touchend': () => {
       d.id(tapp).style.backgroundColor = '#fff';
+      window.sessionStorage.setItem(tapp, true);
       window.location.hash = `#detail?tapp=${tapp}`;
     }
   });

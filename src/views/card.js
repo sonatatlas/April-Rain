@@ -74,8 +74,7 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2) {
       if (cb2 != undefined) { cb2(); }
     }
   }).t(element);
-  e.i('div', {'class': 'big_title_msg_d'}, {},
-    'Sale data to public health institution').t(msg_wrapper);
+  e.i('div', {'class': 'big_title_msg_d'}, {}, title).t(msg_wrapper);
   // content
   let msg = e.i('div', {'class': 'msg_notifications_d', 'id': title}).t(msg_wrapper);
   // left
@@ -83,7 +82,6 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2) {
   e.i('div', {'class': `left_msg_pic_d ${pic}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub1).t(right_msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub2).t(right_msg);
   let judge_circle = e.i('text', {

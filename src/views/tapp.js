@@ -7,7 +7,6 @@ import '../styles/pics.css';
 import '../styles/notifications.css';
 import {DOM, Element} from '../lib';
 import { navigator } from './components';
-// import { model_a, model_noti } from './card'
 
 /* const */
 const d = new DOM();
@@ -20,6 +19,7 @@ function model_a(tapp, noti, sub) {
       d.id(tapp).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
     }, 'touchend': () => {
       d.id(tapp).style.backgroundColor = '#fff';
+      window.sessionStorage.setItem(tapp, true);
       window.location.hash = `#detail?tapp=${tapp}`;
     }
   });
@@ -90,7 +90,7 @@ export default function tapp(data){
         d.id(apps[i]).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
       }, 'touchend': () => {
         // window.location.hash = '#stream';
-        d.id(apps[i]).style.backgroundColor = '#fff';
+        d.id(apps[i]).style.backgroundColor = '#f9fefe';
       }
     }).t(wrapper_app_tapp_safe);
     let wrapper_icon = e.i('div', {'class': 'wrapper_icon_tapp'}).t(app);

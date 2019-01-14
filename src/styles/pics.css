@@ -73,6 +73,18 @@
 .service_wallet_3 {background-image:  url('../assets/tapp/wallet-3.svg')}
 .service_wallet_4 {background-image:  url('../assets/tapp/wallet-4.svg')}
 
+/* Detail */
+.detail_space {background-image:  url('../assets/detail/detail_space.svg')}
+.detail_social {background-image:  url('../assets/detail/detail_social.svg')}
+.detail_store {background-image:  url('../assets/detail/detail_store.svg')}
+.detail_work {background-image:  url('../assets/detail/detail_work.svg')}
+.detail_wallet {background-image:  url('../assets/detail/detail_wallet.svg')}
+
+.card_b_space {background-image:  url('../assets/detail/card_b/space.svg')}
+.card_b_social {background-image:  url('../assets/detail/card_b/social.svg')}
+.card_b_store {background-image:  url('../assets/detail/card_b/store.svg')}
+.card_b_work {background-image:  url('../assets/detail/card_b/work.svg')}
+.card_b_wallet {background-image:  url('../assets/detail/card_b/wallet.svg')}
 
 /* Model */
 .foot_health { background-image:  url('../assets/model/foot_health.svg')}

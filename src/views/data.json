@@ -5,32 +5,55 @@
     "sub": "3 health indicator improved!",
     "explain": "Assistants for your life",
     "services": [
-      "Health",
-      "Routine",
-      "news",
-      "Entertainment"
+      "Health", "Routine",
+      "news", "Entertainment"
+    ],
+    "card_a": [
+      "Healthier heart",
+      "Good shape"
+    ],
+    "card_b": [
+      "Sale data to Public health institution",
+      "3 vital data for 3 month",
+      "$10/week + Service Coupons"
     ]
-  }, "social": {
+  },
+  "social": {
     "tapp": "social",
     "noti": "Anniversary is coming!",
     "sub": "In 2 days, let's prepare fot it!",
     "explain": "Assistants for your social life",
     "services": [
-      "Relationship",
-      "Chats",
-      "Social media",
-      "Meetup"
+      "Relationship", "Chats",
+      "Social media", "Meetup"
+    ],
+    "card_a": [
+      "Tomorrow: Marriaged for 2 years",
+      "Agenda check: Great for a 3 day trip"
+    ],
+    "card_b": [
+      "Travel to Great Barrier Reef",
+      "Romantic & Diving you both like",
+      "Departing tonight"
     ]
-  }, "store": {
+  },
+  "store": {
     "tapp": "store",
     "noti": "Get ready for the trip",
     "sub": "Cusstomized diving suit",
     "explain": "Assistants for spending money wisely",
     "services": [
-      "Shopping",
-      "Renting",
-      "Flea Market",
-      "Travel"
+      "Shopping", "Renting",
+      "Flea Market", "Travel"
+    ],
+    "card_a": [
+      "The diving sites prefer owning a suit",
+      "Customized suit reduce sickness"
+    ],
+    "card_b": [
+      "Buy Suits form Sportech Sportware",
+      "3D printed with your body info",
+      "35% off with divig discount & Coupon"
     ]
   }, "work": {
     "tapp": "work",
@@ -38,10 +61,17 @@
     "sub": "Just enjoy your trip",
     "explain": "Assistants for a productive working life",
     "services": [
-      "Opportunity",
-      "Arrangement",
-      "Task",
-      "Education"
+      "Opportunity", "Arrangement",
+      "Task", "Education"
+    ],
+    "card_a": [
+      "A designing task deadline in 2 days",
+      "It's Non-urgent and related to Bob"
+    ],
+    "card_b": [
+      "Ask Bob if he can re-schedule",
+      "It's ok according to project plan",
+      "Can bring back some gift for him"
     ]
   }, "wallet": {
     "tapp": "wallet",
@@ -49,10 +79,17 @@
     "sub": "Make wiser investment choices",
     "explain": "Assistants for a wealthy life",
     "services": [
-      "Money",
-      "Assets",
-      "Budget",
-      "Investment"
+      "Money", "Assets",
+      "Budget", "Investment"
+    ],
+    "card_a": [
+      "5% more in historical performance",
+      "Equally subscription monthly fee"
+    ],
+    "card_b": [
+      "Consider to subscribe new assistant",
+      "Know better about your fiance st",
+      "Smarter choice, same $5 per month"
     ]
   }, "about": {
     "tapp": "",
