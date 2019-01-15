@@ -15,8 +15,122 @@
     "card_b": [
       "Sale data to Public health institution",
       "3 vital data for 3 month",
-      "$10/week + Service Coupons"
-    ]
+      "$10/week + Service Coupons",
+      "Sale data to Sportech Sportwear",
+      "3 activities data for 3 month",
+      "$10/week + Product Coupons"
+    ],
+    "card_c": [
+      "Privacy",
+      "protection",
+      "Contract",
+      "auditing & signing"
+    ],
+    "card_d": [
+      "1st payment received $10",
+      "Coupon received"
+    ],
+    "model_a": {
+      "title_a": "Healthier body!",
+      "top_array_a": [
+        "Health assistant",
+        "-10% this month"
+      ],
+      "top_array_b": [
+        "Good shape",
+        "-5% this month"
+      ],
+      "creep_words_a": [
+        "_Lower resting heart rate",
+        "related to",
+        "_more work out time"
+      ],
+      "creep_words_b": [
+        "_Lower BMI",
+        "related to",
+        "_More work out time",
+        "_Less calories intake"
+      ],
+      "foot_a": "health assistant"
+    },
+    "model_b": {
+      "title_a": "Sale data to public health institution",
+      "title_b": "Sale data to Sportech Sportwear",
+      "top_array_a": [
+        "public health institution"
+      ],
+      "top_array_b": [
+        "Sportech Sportwear"
+      ],
+      "creep_words_a": [
+        "Sell 3 kind of",
+        "_activities data",
+        "to",
+        "_3 month",
+        "including",
+        "_Heart rate",
+        "_Blood pressure",
+        "_Respiratory ratep"
+      ],
+      "creep_words_b": [
+        "Sell 3 kind of",
+        "_activities data",
+        "to",
+        "_3 month",
+        "including",
+        "_steps",
+        "_stand hours",
+        "_exercise minutes"
+      ],
+      "fall_words_a": [
+        "Data type",
+        "anonymous data",
+        "Pay frequency",
+        "weekly",
+        "Physical check-up discount coupon"
+      ],
+      "fall_words_b": [
+        "Data type",
+        "anonymous data",
+        "Pay frequency",
+        "weekly",
+        "Sportswear discount coupon"
+      ],
+      "foot_a": "Earning assistant",
+      "foot_b": "Earning assistant"
+    },
+    "model_c": {
+      "title_a": "Privacy protection",
+      "title_b": "Contract auditing & signing",
+      "foot_a": "Privacy assistant",
+      "foot_b": "Contract assistant",
+      "top_array_a": [
+        "Body Guard ®"
+      ],
+      "top_array_b": [
+        "Good Sign ®"
+      ],
+      "fall_words_a": [
+        "Service",
+        "Body Guard ® personal data protector",
+        "Description",
+        "provide data anonymization service before data send to buyers"
+      ],
+      "fall_words_b": [
+        "Service",
+        "Good Sign ® smart contract assistant",
+        "Description",
+        "audit and verify the smart contract and make signing secure"
+      ],
+      "pic_and_words_a": [
+        "Service registered on this flow",
+        "Anonymized data send to buyer"
+      ],
+      "pic_and_words_b": [
+        "Service registered on this flow",
+        "Contract is audited and signed"
+      ]
+    }
   },
   "social": {
     "tapp": "social",
@@ -34,7 +148,21 @@
     "card_b": [
       "Travel to Great Barrier Reef",
       "Romantic & Diving you both like",
-      "Departing tonight"
+      "Departing tonight",
+      "Travel to Whitsunday islands",
+      "Beach & divnig your both like",
+      "Departing Tomorrow Morning"
+    ],
+    "card_c": [
+      "Booking",
+      "Travel tickets",
+      "Renting",
+      "House & Car",
+      "Reminders",
+      "Set"
+    ],
+    "card_d": [
+      "All set! Ready to Surprise!"
     ]
   },
   "store": {
@@ -54,6 +182,18 @@
       "Buy Suits form Sportech Sportware",
       "3D printed with your body info",
       "35% off with divig discount & Coupon"
+    ],
+    "card_c": [
+      "Send",
+      "anonymous data",
+      "Production &",
+      "Delivery confirm",
+      "Payment",
+      "complete"
+    ],
+    "card_d": [
+      "2 suits order placed",
+      "Received at the diving site"
     ]
   }, "work": {
     "tapp": "work",
@@ -72,6 +212,15 @@
       "Ask Bob if he can re-schedule",
       "It's ok according to project plan",
       "Can bring back some gift for him"
+    ],
+    "card_c": [
+      "Request",
+      "send",
+      "Gift for",
+      "Bob reminder"
+    ],
+    "card_d": [
+      "Request send, Waiting for reply"
     ]
   }, "wallet": {
     "tapp": "wallet",
@@ -90,6 +239,17 @@
       "Consider to subscribe new assistant",
       "Know better about your fiance st",
       "Smarter choice, same $5 per month"
+    ],
+    "card_c": [
+      "Subscription",
+      "Contract Signed",
+      "Assistant",
+      "Downloaded",
+      "Related data",
+      "Permission"
+    ],
+    "card_d": [
+      "New assistant is working!"
     ]
   }, "about": {
     "tapp": "",

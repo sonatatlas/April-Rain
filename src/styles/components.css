@@ -128,8 +128,11 @@
 .card_fall_words_wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0 5vw;
+}
+
+.card_fall_words_wrapper > div {
+    text-align: left;
 }
 
 .pic_and_words_wrapper {
@@ -137,6 +140,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 5vw;
+    margin-left: 3vw;
     margin-top: 2em;
     justify-content: flex-start;
     align-items: center;
@@ -152,8 +156,8 @@
     color: #aab2b7;
     font-size: 1.8em;
     line-height: 2em;
-    margin-right: 1em;
-    padding: 0 0.5em;
+    margin-right: 0.3em;
+    padding: 0 0.3em;
     margin-bottom: 0.5em;
 }
 

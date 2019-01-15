@@ -82,15 +82,18 @@
 }
 
 .trends {
-    background-image:linear-gradient(135deg,#80efe3, #16c2c3),linear-gradient(135deg,#80efe3,#16c2c3);
+    background-image:linear-gradient(135deg,#80efe3, #16c2c3),
+                     linear-gradient(135deg,#80efe3, #16c2c3);
 }
 
 .trends_tap {
-    background-image:linear-gradient(135deg,rgba(142, 199, 192), rgba(90, 168, 170)),linear-gradient(135deg,rgba(142, 199, 192),rgba(90, 168, 170));
+    background-image:linear-gradient(135deg,rgba(142, 199, 192), rgba(90, 168, 170)),
+                     linear-gradient(135deg,rgba(142, 199, 192), rgba(90, 168, 170));
 }
 
 .whatsup {
-    background-image:linear-gradient(135deg,#fff, #fff),linear-gradient(135deg,#80efe3,#16c2c3);
+    background-image:linear-gradient(135deg,#fff, #fff),
+                     linear-gradient(135deg,#80efe3,#16c2c3);
 }
 
 .text_tab_bar {

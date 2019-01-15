@@ -1,3 +1,4 @@
+
 /*
  *
  **/
@@ -14,28 +15,35 @@ const d = new DOM();
 const e = new Element();
 
 /* Functions */
-function last_block(element) {
+function last_block(element, data) {
   let model_f_wrapper = e.i('div', {'class': 'msg_wrapper_f'}).t(element);
-  model_f(model_f_wrapper,
-    'icon_3_1', 'Received 1st payment', '$10 will received more upcoming weeks');
-  e.i('div', {'class': 'br_black'}).t(model_f_wrapper);
-  model_f(model_f_wrapper, 'icon_3_2', 'Discount coupon received', 'clicked to see detail');
+  model_f(model_f_wrapper, `card_d_${data.tapp}`, data.card_d[0]);
+  if(data.card_d[1]){
+    e.i('div', {'class': 'br_black'}).t(model_f_wrapper);
+    model_f(model_f_wrapper, `card_d_${data.tapp}_b`, data.card_d[1]);
+  }
   e.i('div', {'class': 'column_space'}).p('').t(element);
   element.element.scrollTo({top: 1000, behavior: 'smooth'});
 }
 
-function slide_area(element) {
+function slide_area(element, data) {
+  let page = d.id('tachion');
   let wrapper = e.i('div', {
     'class': 'slide_area_detail', 'id': 'slide_area_detail'
   }).t(element);
-  model_e(wrapper, 'icon_1_5', 'Privacy', 'protection',
-    () => card_model_c(page_detail),
+  model_e(wrapper, 'icon_1_5', data.card_c[0], data.card_c[1],
+    () => card_model_c(page, data, 'a'),
     () => {
-      model_e(wrapper,
-        'icon_1_5', 'verify & auditing', '& signed',
-        () => card_model_c(element),
-        () => last_block(element),
-        true
+      model_e(wrapper, 'icon_1_5', data.card_c[2], data.card_c[3],
+        () => card_model_c(page, data, 'b'),
+        () => {
+          if(data.card_c[4]){
+            model_e(wrapper, 'icon_1_5', data.card_c[4], data.card_c[5],
+              () => card_model_c(page, data, 'c'),
+              ()=> last_block(element, data),
+              true)
+          } else { last_block(element, data) }
+        }, true
       );
     }
   );
@@ -57,18 +65,36 @@ export default function detail(data) {
   let card_a_wrapper = e.i('div', {
     'class': 'card_a_wrapper card_a_wrapper_bg'
   }, {'touchend': () => {}}).t(safe_detail);
-  model_b(card_a_wrapper, `detail_${data.tapp}`, data.noti, data.subp,
-    () => card_model_a(page_detail)
+  model_b(card_a_wrapper, `detail_${data.tapp}`, data.noti, data.sub,
+    () => card_model_a(page_detail, data)
   );
   e.i('div', {'class': 'br'}).t(card_a_wrapper);
-  model_c(card_a_wrapper, 'icon_1_2', data.card_a[0]);
-  model_c(card_a_wrapper, 'icon_1_3', data.card_a[1]);
+  model_c(card_a_wrapper, `card_a_${data.tapp}`, data.card_a[0]);
+  model_c(card_a_wrapper, `card_a_${data.tapp}_b`, data.card_a[1]);
 
-  model_d(safe_detail, `card_b_${data.tapp}`,
+  let slide_model_d = e.i('div', {
+    'class': 'slide_model_d',
+    'id': 'slide_model_d'
+  }).t(safe_detail);
+  model_d(slide_model_d, `card_b_${data.tapp}`,
     data.card_b[0],
     data.card_b[1],
     data.card_b[2],
-    () => slide_area(safe_detail),
-    () => card_model_b(page_detail)
+    () => slide_area(safe_detail, data),
+    () => card_model_b(page_detail, data, 'a'),
+    data.card_b[3]?true:undefined
   );
+  if(data.card_b[3]){
+    model_d(slide_model_d, `card_b_${data.tapp}_b`,
+      data.card_b[3],
+      data.card_b[4],
+      data.card_b[5],
+      () => slide_area(safe_detail, data),
+      () => card_model_b(page_detail, data, 'b'),
+      true
+    );
+  }
+  let dots = e.i('div', {'class': 'slide_model_d_dots'}).t(safe_detail);
+  e.i('div', {'class': 'slide_dot slide_dot_on', 'id': 'dot_1'}).t(dots);
+  e.i('div', {'class': 'slide_dot slide_dot_off', 'id': 'dot_2'}).t(dots);
 }

@@ -80,12 +80,56 @@
 .detail_work {background-image:  url('../assets/detail/detail_work.svg')}
 .detail_wallet {background-image:  url('../assets/detail/detail_wallet.svg')}
 
+.card_a_space {background-image:  url('../assets/detail/card_a/space.svg')}
+.card_a_space_b {background-image:  url('../assets/detail/card_a/space_b.svg')}
+.card_a_social {background-image:  url('../assets/detail/card_a/social.svg')}
+.card_a_social_b {background-image:  url('../assets/detail/card_a/social_b.svg')}
+.card_a_store {background-image:  url('../assets/detail/card_a/store.svg')}
+.card_a_store_b {background-image:  url('../assets/detail/card_a/store_b.svg')}
+.card_a_work {background-image:  url('../assets/detail/card_a/work.svg')}
+.card_a_work_b {background-image:  url('../assets/detail/card_a/work_b.svg')}
+.card_a_wallet {background-image:  url('../assets/detail/card_a/wallet.svg')}
+.card_a_wallet_b {background-image:  url('../assets/detail/card_a/wallet_b.svg')}
+
 .card_b_space {background-image:  url('../assets/detail/card_b/space.svg')}
+.card_b_space_b {background-image:  url('../assets/detail/card_b/space_b.svg')}
 .card_b_social {background-image:  url('../assets/detail/card_b/social.svg')}
+.card_b_social_b {background-image:  url('../assets/detail/card_b/social_b.svg')}
 .card_b_store {background-image:  url('../assets/detail/card_b/store.svg')}
 .card_b_work {background-image:  url('../assets/detail/card_b/work.svg')}
 .card_b_wallet {background-image:  url('../assets/detail/card_b/wallet.svg')}
 
+.card_d_space {background-image:  url('../assets/detail/card_d/space.svg')}
+.card_d_space_b {background-image:  url('../assets/detail/card_d/space_b.svg')}
+.card_d_social {background-image:  url('../assets/detail/card_d/social.svg')}
+.card_d_store {background-image:  url('../assets/detail/card_d/store.svg')}
+.card_d_store_b {background-image:  url('../assets/detail/card_d/store_b.svg')}
+.card_d_work {background-image:  url('../assets/detail/card_d/work.svg')}
+.card_d_wallet {background-image:  url('../assets/detail/card_d/wallet.svg')}
+
 /* Model */
+.model_a_space_a {background-image:  url('../assets/detail/model_a/space.svg')}
+.model_a_space_b {background-image:  url('../assets/detail/model_a/space_b.svg')}
+.model_a_space_foot_a {background-image:  url('../assets/detail/model_a/space_foot.svg')}
+.model_a_space_pic_a {background-image:  url('../assets/detail/model_a/space_pic_a.svg')}
+.model_a_space_pic_b {background-image:  url('../assets/detail/model_a/space_pic_b.svg')}
+.model_a_space_title_a {background-image:  url('../assets/detail/model_a/space_title.svg')}
+
+.model_b_space_title_a {background-image:  url('../assets/detail/model_b/space_title_a.svg')}
+.model_b_space_title_b {background-image:  url('../assets/detail/model_b/space_title_b.svg')}
+.model_b_space_foot_a {background-image:  url('../assets/detail/model_b/space_foot_a.svg')}
+.model_b_space_foot_b {background-image:  url('../assets/detail/model_b/space_foot_b.svg')}
+.model_b_space_a {background-image:  url('../assets/detail/model_b/space_a.svg')}
+.model_b_space_b {background-image:  url('../assets/detail/model_b/space_b.svg')}
+.model_b_space_pic_a {background-image:  url('../assets/detail/model_b/space_pic_a.svg')}
+.model_b_space_pic_b {background-image:  url('../assets/detail/model_b/space_pic_b.svg')}
+
+.model_c_space_title_a {background-image:  url('../assets/detail/model_c/space_title_a.svg')}
+.model_c_space_title_b {background-image:  url('../assets/detail/model_c/space_title_b.svg')}
+.model_c_space_foot_a {background-image:  url('../assets/detail/model_c/space_foot_a.svg')}
+.model_c_space_foot_b {background-image:  url('../assets/detail/model_c/space_foot_b.svg')}
+.model_c_space_a {background-image:  url('../assets/detail/model_c/space_a.svg')}
+.model_c_space_b {background-image:  url('../assets/detail/model_c/space_b.svg')}
+
 .foot_health { background-image:  url('../assets/model/foot_health.svg')}
 .chart {background-image:  url('../assets/model/chart.svg')}
