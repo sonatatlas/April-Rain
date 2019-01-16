@@ -33,7 +33,7 @@ export function model_card_head(element, pic, title, sub) {
 
 
 /* model b */
-export function model_b(element, pic, title, sub, cb) {
+export function model_b(element, pic, title, sub, cb, tapp) {
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_b'}).t(element);
   // content
@@ -45,9 +45,12 @@ export function model_b(element, pic, title, sub, cb) {
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
   e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg_b'}).p(sub).t(right_msg);
-  e.i('div', {'class': 'right_arrow_msg right_white'}, {
-    'touchend': () => {cb?cb():''}
-  }).t(msg);
+  // MODEL_A
+  if (tapp == 'space') {
+    e.i('div', {'class': 'right_arrow_msg right_white'}, {
+      'touchend': () => {cb?cb():''}
+    }).t(msg);
+  }
 }
 
 /* model c */
@@ -72,6 +75,7 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag) {
   /* wrapper */
   let ts = 0;
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_d', 'id': 'slide_controller'}, {
+    // CMODEL
     'click': () => { if (cb2 != undefined) { cb2(); } },
     'touchstart': e => {
       // e.preventDefault();

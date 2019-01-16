@@ -4,7 +4,13 @@
  **/
 //#home.js
 import { router } from '.';
-import { card_model_a, card_model_b, card_model_c, navigator } from './components';
+import {
+  card_model_a,
+  card_model_b,
+  card_model_c,
+  card_model_d,
+  navigator
+} from './components';
 import { DOM, Element } from '../lib';
 import { model_b, model_c, model_d, model_e, model_f } from './card';
 import '../styles/detail.css';
@@ -41,7 +47,7 @@ function slide_area(element, data) {
             model_e(wrapper, 'icon_1_5', data.card_c[4], data.card_c[5],
               () => card_model_c(page, data, 'c'),
               ()=> last_block(element, data),
-              true)
+             true)
           } else { last_block(element, data) }
         }, true
       );
@@ -66,8 +72,8 @@ export default function detail(data) {
     'class': 'card_a_wrapper card_a_wrapper_bg'
   }, {'touchend': () => {}}).t(safe_detail);
   model_b(card_a_wrapper, `detail_${data.tapp}`, data.noti, data.sub,
-    () => card_model_a(page_detail, data)
-  );
+    () => card_model_a(page_detail, data),
+    data.tapp);
   e.i('div', {'class': 'br'}).t(card_a_wrapper);
   model_c(card_a_wrapper, `card_a_${data.tapp}`, data.card_a[0]);
   model_c(card_a_wrapper, `card_a_${data.tapp}_b`, data.card_a[1]);
@@ -81,17 +87,31 @@ export default function detail(data) {
     data.card_b[1],
     data.card_b[2],
     () => slide_area(safe_detail, data),
-    () => card_model_b(page_detail, data, 'a'),
-    data.card_b[3]?true:undefined
+    () => {
+      if (data.tapp == 'space'){
+        card_model_b(page_detail, data, 'a');
+      } else if (data.tapp == 'social') {
+        card_model_d(page_detail, data, 'a')
+      }
+    },
+    data.card_b[3]?true:undefined,
+    data.tapp
   );
-  if(data.card_b[3]){
+  if (data.card_b[3]) {
     model_d(slide_model_d, `card_b_${data.tapp}_b`,
       data.card_b[3],
       data.card_b[4],
       data.card_b[5],
       () => slide_area(safe_detail, data),
-      () => card_model_b(page_detail, data, 'b'),
-      true
+      () => {
+        if (data.tapp == 'space') {
+          card_model_b(page_detail, data, 'b');
+        } else if (data.tapp == 'social') {
+          card_model_d(page_detail, data, 'b');
+        }
+      },
+      true,
+      data.tapp
     );
   }
   let dots = e.i('div', {'class': 'slide_model_d_dots'}).t(safe_detail);

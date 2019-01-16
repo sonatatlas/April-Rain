@@ -2,9 +2,9 @@
 import { router } from '.';
 import { DOM, Element } from '../lib';
 import { model_card_head } from './card';
-import '../styles/components.css';
 import '../styles/card.css';
 import '../styles/pics.css';
+import '../styles/components.css';
 import '../styles/notifications.css';
 
 /* const */
@@ -126,4 +126,21 @@ export function card_model_c(el, data, order) {
   e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
   pic_and_words(body_wrapper, data.model_c[`pic_and_words_${order}`][0]);
   pic_and_words(body_wrapper, data.model_c[`pic_and_words_${order}`][1]);
+}
+
+// function body_top_array(el, data, model, order) {
+//   let passing = data[model][`top_array_${order}`];
+//   let array = e.i('div', {'class': 'card_body_top_array'}).t(el)
+//   e.i('div', {'class': `card_little_pic ${model}_${data.tapp}_${order}`}).t(array);
+//   e.i('div', {}, {}, passing[0]).t(array);
+//   e.i('div', {'class': 'card_grey_font'}, {}, passing[1]).t(array);
+// }
+
+export function card_model_d(el, data, order) {
+  let body_wrapper = model_wrapper_generator(el, data, 'model_d', order);
+  body_a(body_wrapper, data, 'model_d', order);
+  e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
+  body_top_array(body_wrapper, data, 'model_d', `${order}_a`);
+  body_top_array(body_wrapper, data, 'model_d', `${order}_b`);
+  body_top_array(body_wrapper, data, 'model_d', `${order}_c`);
 }

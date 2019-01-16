@@ -163,7 +163,63 @@
     ],
     "card_d": [
       "All set! Ready to Surprise!"
-    ]
+    ],
+    "model_d": {
+      "title_a": "Travel to Great Barrier Reef",
+      "title_b": "Travel to Whitsunday islands",
+      "top_array_a": [
+        "Great Barrier Reef"
+      ],
+      "top_array_a_a":[
+        "Weather",
+        "68.4 - 73.6F"
+      ],
+      "top_array_a_b":[
+        "Budget",
+        "5%↑ for average trip"
+      ],
+      "top_array_a_c": [
+        "Crowdedness",
+        "Medium"
+      ],
+      "top_array_b": [
+        "Whitsunday islands"
+      ],
+      "top_array_b_a":[
+        "Weather",
+        "59.2 - 65.8F"
+      ],
+      "top_array_b_b":[
+        "Budget",
+        "30%↓ for average trip"
+      ],
+      "top_array_b_c": [
+        "Crowdedness",
+        "Less"
+      ],
+      "creep_words_a": [
+        "Your preference:",
+        "_Romantic",
+        "_Diving",
+        "_Coral reef",
+        "Your partner",
+        "_Romantic",
+        "_Seafood",
+        "_Diving"
+      ],
+      "creep_words_b": [
+        "Your preference",
+        "_Diving",
+        "_Beach",
+        "_Rain forest",
+        "Your partner",
+        "_Seafood",
+        "_Diving",
+        "_Beach"
+      ],
+      "foot_a": "Travel assistant",
+      "foot_b": "Travel assistant"
+    }
   },
   "store": {
     "tapp": "store",
@@ -195,7 +251,8 @@
       "2 suits order placed",
       "Received at the diving site"
     ]
-  }, "work": {
+  },
+  "work": {
     "tapp": "work",
     "noti": "Re-schedule your work!",
     "sub": "Just enjoy your trip",
@@ -222,7 +279,8 @@
     "card_d": [
       "Request send, Waiting for reply"
     ]
-  }, "wallet": {
+  },
+  "wallet": {
     "tapp": "wallet",
     "noti": "New investment assistant!",
     "sub": "Make wiser investment choices",
@@ -251,7 +309,8 @@
     "card_d": [
       "New assistant is working!"
     ]
-  }, "about": {
+  },
+  "about": {
     "tapp": "",
     "noti": "",
     "sub": "",

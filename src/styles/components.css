@@ -18,16 +18,16 @@
     left: 5vw;
     width: 7em;
     height: 7em;
-    background-repeat: no-repeat;
-    background-size: 1.5em 2.5em;
     background-position: center;
+    background-size: 1.5em 2.5em;
+    background-repeat: no-repeat;
 }
 
 .label_navigator {
-    position: relative;
+    margin: auto;
     font-size: 2.5em;
     font-weight: 900;
-    margin: auto;
+    position: relative;
 }
 
 /* br */
@@ -39,21 +39,21 @@
 
 .card_br_black {
     margin: 0 5vw;
-    margin-top: 2em;
+    margin-top: 1em;
     border: 1.5px solid #eee;
 }
 
 /* model */
 .wrapper_model {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(21, 32, 36, .7);
-    position: absolute;
     top: 0;
     z-index: 2;
+    width: 100%;
+    height: 100%;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
+    background-color: rgba(21, 32, 36, .7);
 }
 
 .card_model {
@@ -113,6 +113,8 @@
 
 .card_row_cover_pic {
     height: 21em;
+    width: 100%;
+    margin: 1em 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,8 +158,8 @@
     color: #aab2b7;
     font-size: 1.8em;
     line-height: 2em;
-    margin-right: 0.3em;
     padding: 0 0.3em;
+    margin-right: 0.3em;
     margin-bottom: 0.5em;
 }
 
