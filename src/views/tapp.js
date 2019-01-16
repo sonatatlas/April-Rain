@@ -65,7 +65,7 @@ export default function tapp(data){
   let safe_tapp = e.i('div', {'class': 'safe safe_tapp'}).t(page_tapp);
 
   //@navigator
-  navigator('panel', data.tapp.charAt(0).toUpperCase() + data.tapp.slice(1));
+  navigator('panel')//data.tapp.charAt(0).toUpperCase() + data.tapp.slice(1));
 
   //@notifications-wrapper
   let safe_notifications = e.i('div', { 'class': 'safe_notifications_tapp'}).t(safe_tapp);
@@ -77,7 +77,7 @@ export default function tapp(data){
   
   //@breaker
   let breaker = e.i('div', {'class': 'breaker_tapp'}, {},
-  'Assistants for your daily life').t(safe_tapp);
+    data.explain).t(safe_tapp);
 
   //@app-wrapper
   let wrapper_app_tapp = e.i('div', {'class': 'wrapper_app_tapp'}).t(safe_tapp);
@@ -95,6 +95,6 @@ export default function tapp(data){
     }).t(wrapper_app_tapp_safe);
     let wrapper_icon = e.i('div', {'class': 'wrapper_icon_tapp'}).t(app);
     e.i('div', {'class': `left_msg_pic ${pics[i]}`}).t(wrapper_icon);
-    e.i('div', {'class': 'text_tapp'}, {}, `${apps[i]} Asst`).t(app);
+    e.i('div', {'class': 'text_tapp'}, {}, `${apps[i]} Asstistant`).t(app);
   }
 }

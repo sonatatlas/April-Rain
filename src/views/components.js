@@ -128,14 +128,6 @@ export function card_model_c(el, data, order) {
   pic_and_words(body_wrapper, data.model_c[`pic_and_words_${order}`][1]);
 }
 
-// function body_top_array(el, data, model, order) {
-//   let passing = data[model][`top_array_${order}`];
-//   let array = e.i('div', {'class': 'card_body_top_array'}).t(el)
-//   e.i('div', {'class': `card_little_pic ${model}_${data.tapp}_${order}`}).t(array);
-//   e.i('div', {}, {}, passing[0]).t(array);
-//   e.i('div', {'class': 'card_grey_font'}, {}, passing[1]).t(array);
-// }
-
 export function card_model_d(el, data, order) {
   let body_wrapper = model_wrapper_generator(el, data, 'model_d', order);
   body_a(body_wrapper, data, 'model_d', order);
@@ -143,4 +135,44 @@ export function card_model_d(el, data, order) {
   body_top_array(body_wrapper, data, 'model_d', `${order}_a`);
   body_top_array(body_wrapper, data, 'model_d', `${order}_b`);
   body_top_array(body_wrapper, data, 'model_d', `${order}_c`);
+}
+
+export function card_model_e(el, data, order) {
+  let body_wrapper = model_wrapper_generator(el, data, 'model_e', order);
+  body_top_array(body_wrapper, data, 'model_e', `${order}_a`);
+  body_top_array(body_wrapper, data, 'model_e', `${order}_b`);
+  body_top_array(body_wrapper, data, 'model_e', `${order}_c`);
+  e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
+  pic_and_words(body_wrapper, data.model_e[`pic_and_words_${order}`][0]);
+}
+
+export function card_model_f(el, data, order) {
+  let body_wrapper = model_wrapper_generator(el, data, 'model_f', order);
+  body_top_array(body_wrapper, data, 'model_f', `${order}_a`);
+  e.i('div', {'class': `card_middle_pic_2 model_f_${data.tapp}_pic_${order}_a`}).t(body_wrapper);
+  pic_and_words(body_wrapper, data.model_f[`pic_and_words_${order}`][0]);
+  e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
+  body_top_array(body_wrapper, data, 'model_f', `${order}_b`);
+  e.i('div', {'class': `card_middle_pic_2 model_f_${data.tapp}_pic_${order}_b`}).t(body_wrapper);
+  pic_and_words(body_wrapper, data.model_f[`pic_and_words_${order}`][1]);
+  e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
+  body_top_array(body_wrapper, data, 'model_f', `${order}_c`);
+  pic_and_words(body_wrapper, data.model_f[`pic_and_words_${order}`][2]);
+}
+
+export function card_model_g(el, data, order) {
+  let body_wrapper = model_wrapper_generator(el, data, 'model_g', order);
+  let words = data.model_g.fall_words_a;
+  e.i('div', {'class': 'card_column_white_space'}).t(body_wrapper);
+  body_fall_words(body_wrapper, words[0], words[1]);
+  body_fall_words(body_wrapper, words[2], words[3]);
+}
+
+export function card_model_h(el, data, order) {
+  let body_wrapper = model_wrapper_generator(el, data, 'model_h', order);
+  body_top_array(body_wrapper, data, 'model_h', `${order}_a`);
+  e.i('div', {'class': `card_middle_pic_2 model_h_${data.tapp}_pic_${order}_a`}).t(body_wrapper);
+  body_top_array(body_wrapper, data, 'model_h', `${order}_b`);
+  body_top_array(body_wrapper, data, 'model_h', `${order}_c`);
+  body_top_array(body_wrapper, data, 'model_h', `${order}_d`);
 }

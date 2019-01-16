@@ -9,6 +9,10 @@ import {
   card_model_b,
   card_model_c,
   card_model_d,
+  card_model_e,
+  card_model_f,
+  card_model_g,
+  card_model_h,
   navigator
 } from './components';
 import { DOM, Element } from '../lib';
@@ -38,15 +42,31 @@ function slide_area(element, data) {
     'class': 'slide_area_detail', 'id': 'slide_area_detail'
   }).t(element);
   model_e(wrapper, 'icon_1_5', data.card_c[0], data.card_c[1],
-    () => card_model_c(page, data, 'a'),
     () => {
+      if (data.tapp == 'space') {
+        card_model_c(page, data, 'a');
+      } else if (data.tapp == 'social') {
+        card_model_e(page, data, 'a');
+      }
+    }, () => {
       model_e(wrapper, 'icon_1_5', data.card_c[2], data.card_c[3],
-        () => card_model_c(page, data, 'b'),
         () => {
-          if(data.card_c[4]){
+          if (data.tapp == 'space') {
+            card_model_c(page, data, 'b');
+          } else if (data.tapp = 'social') {
+            card_model_f(page, data, 'a');
+          }
+        },
+        () => {
+          if (data.card_c[4]) {
             model_e(wrapper, 'icon_1_5', data.card_c[4], data.card_c[5],
-              () => card_model_c(page, data, 'c'),
-              ()=> last_block(element, data),
+              () => {
+                if (data.tapp == 'space'){
+                  card_model_c(page, data, 'a');
+                } else if (data.tapp == 'social') {
+                  card_model_g(page, data, 'a');
+                }
+              }, ()=> last_block(element, data),
              true)
           } else { last_block(element, data) }
         }, true
@@ -88,14 +108,16 @@ export default function detail(data) {
     data.card_b[2],
     () => slide_area(safe_detail, data),
     () => {
-      if (data.tapp == 'space'){
+      if (data.tapp == 'space') {
         card_model_b(page_detail, data, 'a');
       } else if (data.tapp == 'social') {
-        card_model_d(page_detail, data, 'a')
+        card_model_d(page_detail, data, 'a');
+      } else if (data.tapp == 'store') {
+        card_model_h(page_detail, data, 'a');
       }
     },
     data.card_b[3]?true:undefined,
-    data.tapp
+    'a'
   );
   if (data.card_b[3]) {
     model_d(slide_model_d, `card_b_${data.tapp}_b`,
@@ -111,7 +133,7 @@ export default function detail(data) {
         }
       },
       true,
-      data.tapp
+      'b'
     );
   }
   let dots = e.i('div', {'class': 'slide_model_d_dots'}).t(safe_detail);

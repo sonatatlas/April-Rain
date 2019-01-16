@@ -48,8 +48,11 @@
 
 .text_tapp {
     top: 37%;
+    line-height: 1.5em;
     font-size: 2em;
     position: relative;
+    margin: auto;
+    width: 10em;
 }
 
 .wrapper_icon_tapp {

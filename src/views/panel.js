@@ -31,13 +31,17 @@ export default function panel(){
       }, 'touchend': () => {
         d.id(apps[i]).style.backgroundColor = '#fff';
         if(apps[i] === 'about') {
-          window.location.hash = '#detail?tapp=about';
+          // window.location.hash = '#detail?tapp=about';
         } else {
           window.location.hash = `#tapp?tapp=${apps[i]}`;
         }
       }
     }).t(wrapper_app_panel_safe);
-    e.i('text', {'class': 'text_app'}, {}, `${apps[i]}`).t(app);
+    let title = apps[i].charAt(0).toUpperCase().toString() + apps[i].slice(1);
+    if (title == "Space"){
+      title = "My Life"
+    }
+    e.i('text', {'class': 'text_app'}, {}, title).t(app);
   }
 
   //@tab-bar

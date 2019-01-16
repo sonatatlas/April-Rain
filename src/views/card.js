@@ -1,11 +1,10 @@
-
 /* model.js */
 import {DOM, Element} from '../lib';
 import { router } from '../views';
 import '../styles/card.css';
 import '../styles/pics.css';
 
-/*g const */
+/* const */
 const d = new DOM();
 const e = new Element();
 
@@ -30,7 +29,6 @@ export function model_card_head(element, pic, title, sub) {
     }
   }).t(msg);
 }
-
 
 /* model b */
 export function model_b(element, pic, title, sub, cb, tapp) {
@@ -71,7 +69,7 @@ export function model_c(element, pic, title, sub) {
 }
 
 /* model d */
-export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag) {
+export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag, order) {
   /* wrapper */
   let ts = 0;
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_d', 'id': 'slide_controller'}, {
@@ -88,7 +86,7 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag) {
         d.id('dot_1').className = 'slide_dot slide_dot_off'
         d.id('dot_2').className = 'slide_dot slide_dot_on'
         d.id('slide_model_d').scrollTo({ left: 1000, behavior: 'smooth'})
-      } else if (flag && ts < -50){
+      } else if (flag && ts < -50) {
         d.id('slide_model_d').scrollTo({ left: -1000, behavior: 'smooth'})
         d.id('dot_1').className = 'slide_dot slide_dot_on'
         d.id('dot_2').className = 'slide_dot slide_dot_off'        
@@ -105,12 +103,13 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag) {
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub1).t(right_msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub2).t(right_msg);
+  let id = `judge_circle_${order}`;
   let judge_circle = e.i('text', {
-    'id': 'judge_circle', 'class': 'right_arrow_msg_d_filled'
+    'id': id, 'class': 'right_arrow_msg_d_filled'
   }, {
     'click': (e) => {
       if(e && e.stopPropagation){ e.stopPropagation();}
-      d.id('judge_circle').parentNode.removeChild(d.id('judge_circle'));      
+      d.id(id).parentNode.removeChild(d.id(id));
       setTimeout(() => {
         if (cb != undefined) { cb(); }
         d.id('slide_model_d').className = 'slide_model_d disabled';
@@ -121,7 +120,7 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag) {
 }
 
 /* model e */
-export function model_e(element, pic, title, sub, cb, cb2, flag) {
+export function model_e(element, pic, title, sub, cb, cb2, flag) {  
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper_e', 'id': title}, {
     'click': () => cb?cb():''
@@ -139,7 +138,7 @@ export function model_e(element, pic, title, sub, cb, cb2, flag) {
   }).t(msg);
   // animate
   e.i('text', {'style': 'font-size: 1.8em; color: white'}).p('OK').t(judge_circle);
-  
+
   if (flag) {
     e.i('div', {'class': 'white_space_detail'}, {}, '&nbsp;').t(d.id('slide_area_detail'));
     d.id('slide_area_detail').scrollTo({ left: 800, behavior: 'smooth'});

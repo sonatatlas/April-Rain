@@ -82,7 +82,10 @@
 
 .card_foot_model, .card_body_top_array > div {
     font-size: 1.8em;
-    line-height: 3em;
+    line-height: 1.5em;
+    margin: 0.5em 1em;
+    margin-right: 5vw;
+    text-align: left;
 }
 
 .card_grey_font {
@@ -115,6 +118,7 @@
     height: 21em;
     width: 100%;
     margin: 1em 0;
+    margin-bottom: 2em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,4 +171,23 @@
     border-radius: 33px;
     border: 2px solid #54d1ce;
     background-color: #f9fefe;
+}
+
+.card_column_white_space {
+    display: block;
+    height: 1.5em;
+    width: 100%;
+}
+
+.card_normal_words { white-space: nowrap }
+.card_middle_pic_2 {
+    width: auto;
+    height: 21em;
+    margin: 1em 5vw;
+    margin-bottom: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 26px;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
 }

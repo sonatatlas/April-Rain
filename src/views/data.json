@@ -1,39 +1,39 @@
 {
   "space": {
     "tapp": "space",
-    "noti": "Healthier body!",
-    "sub": "3 health indicator improved!",
-    "explain": "Assistants for your life",
+    "noti": "Healthier Body!",
+    "sub": "2 health indicators improved",
+    "explain": "Assistants for Daily Life",
     "services": [
-      "Health", "Routine",
-      "news", "Entertainment"
+      "Health", "Daily",
+      "Information", "Entertainment"
     ],
     "card_a": [
       "Healthier heart",
       "Good shape"
     ],
     "card_b": [
-      "Sale data to Public health institution",
-      "3 vital data for 3 month",
-      "$10/week + Service Coupons",
+      "Sale Data to Public Health Institution",
+      "3 vital data for 3 months",
+      "$10/week + Service Coupon",
       "Sale data to Sportech Sportwear",
-      "3 activities data for 3 month",
+      "3 activity data for 3 months",
       "$10/week + Product Coupons"
     ],
     "card_c": [
       "Privacy",
-      "protection",
+      "Protection",
       "Contract",
-      "auditing & signing"
+      "Auditing & Signing"
     ],
     "card_d": [
       "1st payment received $10",
       "Coupon received"
     ],
     "model_a": {
-      "title_a": "Healthier body!",
+      "title_a": "Healthier Body",
       "top_array_a": [
-        "Health assistant",
+        "Health heart",
         "-10% this month"
       ],
       "top_array_b": [
@@ -41,69 +41,69 @@
         "-5% this month"
       ],
       "creep_words_a": [
-        "_Lower resting heart rate",
+        "_Resting heart rate ↑",
         "related to",
-        "_more work out time"
+        "_Workout Time"
       ],
       "creep_words_b": [
-        "_Lower BMI",
+        "_BMI ↓",
         "related to",
-        "_More work out time",
-        "_Less calories intake"
+        "_Workout Time",
+        "_Calories intake"
       ],
-      "foot_a": "health assistant"
+      "foot_a": "Health Assistant"
     },
     "model_b": {
-      "title_a": "Sale data to public health institution",
-      "title_b": "Sale data to Sportech Sportwear",
+      "title_a": "Sell Data to Public Health Institution",
+      "title_b": "Sell Data to Sportech",
       "top_array_a": [
-        "public health institution"
+        "Public Health Institution"
       ],
       "top_array_b": [
-        "Sportech Sportwear"
+        "Sportech"
       ],
       "creep_words_a": [
         "Sell 3 kind of",
-        "_activities data",
-        "to",
-        "_3 month",
-        "including",
-        "_Heart rate",
-        "_Blood pressure",
-        "_Respiratory ratep"
+        "_Vital Data",
+        "for",
+        "_3 Months",
+        "Including",
+        "_Heart Rate",
+        "_Blood Pressure",
+        "_Respiratory Rate"
       ],
       "creep_words_b": [
         "Sell 3 kind of",
-        "_activities data",
-        "to",
-        "_3 month",
-        "including",
-        "_steps",
-        "_stand hours",
-        "_exercise minutes"
+        "_Activities Data",
+        "for",
+        "_3 Months",
+        "Including",
+        "_Steps",
+        "_Stand Hours",
+        "_Exercise Minutes"
       ],
       "fall_words_a": [
         "Data type",
-        "anonymous data",
+        "Anonymous data",
         "Pay frequency",
-        "weekly",
-        "Physical check-up discount coupon"
+        "Weekly",
+        "Physical Examination Coupon"
       ],
       "fall_words_b": [
         "Data type",
-        "anonymous data",
+        "Anonymous data",
         "Pay frequency",
-        "weekly",
-        "Sportswear discount coupon"
+        "Weekly",
+        "Sportswear Discount Coupon"
       ],
-      "foot_a": "Earning assistant",
-      "foot_b": "Earning assistant"
+      "foot_a": "Earning Assistant",
+      "foot_b": "Earning Assistant"
     },
     "model_c": {
       "title_a": "Privacy protection",
       "title_b": "Contract auditing & signing",
-      "foot_a": "Privacy assistant",
-      "foot_b": "Contract assistant",
+      "foot_a": "Privacy Assistant",
+      "foot_b": "Contract Assistant",
       "top_array_a": [
         "Body Guard ®"
       ],
@@ -112,7 +112,7 @@
       ],
       "fall_words_a": [
         "Service",
-        "Body Guard ® personal data protector",
+        "Body Guard® personal data protector",
         "Description",
         "provide data anonymization service before data send to buyers"
       ],
@@ -134,12 +134,12 @@
   },
   "social": {
     "tapp": "social",
-    "noti": "Anniversary is coming!",
+    "noti": "Anniversary is Coming!",
     "sub": "In 2 days, let's prepare fot it!",
-    "explain": "Assistants for your social life",
+    "explain": "Assistants for Social Life",
     "services": [
-      "Relationship", "Chats",
-      "Social media", "Meetup"
+      "Relationship", "Messaging",
+      "Social Media", "Meetup"
     ],
     "card_a": [
       "Tomorrow: Marriaged for 2 years",
@@ -219,13 +219,58 @@
       ],
       "foot_a": "Travel assistant",
       "foot_b": "Travel assistant"
+    },
+    "model_e": {
+      "title_a": "Booking travel tickets",
+      "foot_a": "Booking assisstant",
+      "top_array_a_a": [
+        "Airport parking lot check"
+      ],
+      "top_array_a_b": [
+        "Flight tickets locked"
+      ],
+      "top_array_a_c": [
+        "Resort tickets locked"
+      ],
+      "pic_and_words_a": [
+        "Payment done"
+      ]
+    },
+    "model_f": {
+      "title_a": "Renting house & car",
+      "title_b": "Select preferences car",
+      "foot_a": "Renting assistant",
+      "top_array_a_a": [
+        "Select preferenced house"
+      ],
+      "top_array_a_b": [
+        "Renting company rating passed"
+      ],
+      "top_array_a_c": [
+        "Renting contract signing 2/2"
+      ],
+      "pic_and_words_a": [
+        "Landlord credit & 6rating passed",
+        "Renting company rating passed",
+        "Payment contract signed"
+      ]
+    },
+    "model_g": {
+      "title_a": "Reminders set",
+      "foot_a": "Arrangement assistant",
+      "fall_words_a": [
+        "Agenda",
+        "Your reminders set",
+        "Your partner",
+        "Agenda can sync to your partner after the big suprise"
+      ]
     }
   },
   "store": {
     "tapp": "store",
-    "noti": "Get ready for the trip",
-    "sub": "Cusstomized diving suit",
-    "explain": "Assistants for spending money wisely",
+    "noti": "Get Ready for the Trip!",
+    "sub": "with customized diving suit",
+    "explain": "Assistants for Spending",
     "services": [
       "Shopping", "Renting",
       "Flea Market", "Travel"
@@ -250,16 +295,32 @@
     "card_d": [
       "2 suits order placed",
       "Received at the diving site"
-    ]
+    ],
+    "model_h": {
+      "title_a": "Suits form Sportech Sportware",
+      "foot_a": "Shopping assistant",
+      "top_array_a_a": [
+        "Sportech Sportware"
+      ],
+      "top_array_a_b": [
+        "3D printed with your body info"
+      ],
+      "top_array_a_c": [
+        "Delivery to diving site while you reach their"
+      ],
+      "top_array_a_d": [
+        "Fit in the sportwear shopping budget with 35% discount"
+      ]
+    }
   },
   "work": {
     "tapp": "work",
-    "noti": "Re-schedule your work!",
-    "sub": "Just enjoy your trip",
-    "explain": "Assistants for a productive working life",
+    "noti": "Re-schedule Your Work!",
+    "sub": "Enjoy your trip",
+    "explain": "Assistants for Productivity",
     "services": [
-      "Opportunity", "Arrangement",
-      "Task", "Education"
+      "Job", "Agenda",
+      "Project", "Education"
     ],
     "card_a": [
       "A designing task deadline in 2 days",
@@ -282,11 +343,11 @@
   },
   "wallet": {
     "tapp": "wallet",
-    "noti": "New investment assistant!",
-    "sub": "Make wiser investment choices",
-    "explain": "Assistants for a wealthy life",
+    "noti": "New Investment Assistant!",
+    "sub": "5% higher performance",
+    "explain": "Assistants for Managing Wealth",
     "services": [
-      "Money", "Assets",
+      "Money", "Asset",
       "Budget", "Investment"
     ],
     "card_a": [

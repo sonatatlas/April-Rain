@@ -24,8 +24,8 @@ export default function home() {
   //@content_top
   let content_top =  e.i('div', {'class': 'content_top_home'}).t(safe_home);
   text('FUTURE OS', 'font_bold_home').t(content_top);
-  text('DEMO', 'font_bold_home').t(content_top);
-  text('EXP', 'font_bold_home').t(content_top);
+//  text('DEMO', 'font_bold_home').t(content_top);
+  text('EXPERIENCE', 'font_bold_home').t(content_top);
 
   //@content_body
   let logo_wrapper = e.i('div', {'class': 'logo_wrapper_home'}).t(safe_home);
@@ -33,5 +33,5 @@ export default function home() {
     'class': 'logo_tachion logo_home'
   }, {'click': welcome}).t(logo_wrapper);
   let wrapper_bottom = e.i('div', {'class': 'wrapper_bottom'}).t(logo_wrapper);
-  text('iOS for the blockchain era', 'font_regular_home').t(wrapper_bottom);
+  text('OS for the blockchain era', 'font_regular_home').t(wrapper_bottom);
 }
