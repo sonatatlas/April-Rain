@@ -26,9 +26,9 @@ export default function welcome() {
   let logo_wrapper = e.i('div', {'class': 'logo_wrapper_welcome'}).t(safe_welcome);
   let wrapper_modal = e.i('div').t(logo_wrapper);
   let wrapper_modal_a = e.i('div').t(wrapper_modal);
-  text('Press to sync data', 'font_regular_welcome').t(wrapper_modal_a);
+  text('Press to sync data', 'middle bold').t(wrapper_modal_a);
   let wrapper_modal_b = e.i('div').t(wrapper_modal);
-  text("Keep it safe, keep it yours", 'font_regular_welcome').t(wrapper_modal_b);
+  text("Keep it safe, keep it yours", 'middle bold').t(wrapper_modal_b);
   let logo_finger = e.i('div', {'class': 'logo_finger logo_welcome'}, {
     click: enter
   }).t(logo_wrapper);

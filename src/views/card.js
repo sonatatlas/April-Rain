@@ -17,7 +17,7 @@ export function model_card_head(element, pic, title, sub) {
   e.i('div', {'class': `left_msg_pic ${pic}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg'}).p(title).t(right_msg);
+  e.i('text', {'class': 'medium align-left'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
   // icon
   e.i('div', {'class': 'right_arrow_msg_2 arrow', 'id': 'double_arrow'}, {
@@ -41,7 +41,7 @@ export function model_b(element, pic, title, sub, cb, tapp) {
   e.i('div', {'class': `left_msg_pic_b ${pic}`}).t(left_msg);
   // riight
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
+  e.i('text', {'class': 'large white bold'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg_b'}).p(sub).t(right_msg);
   // MODEL_A
   if (tapp == 'space') {
@@ -64,8 +64,8 @@ export function model_c(element, pic, title, sub) {
   e.i('div', {'class': `left_msg_pic_c ${pic}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c_2'}).t(msg);
-  e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg_c'}).p(sub).t(right_msg);
+  e.i('text', {'class': 'small bold white'}).p(title).t(right_msg);
+  e.i('text', {'class': 'small white ml-1'}).p(sub).t(right_msg);
 }
 
 /* model d */
@@ -93,7 +93,7 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag, order) {
       }
     }
   }).t(element);
-  e.i('div', {'class': 'big_title_msg_d'}, {}, title).t(msg_wrapper);
+  e.i('div', {'class': 'medium mx align-left '}, {}, title).t(msg_wrapper);
   // content
   let msg = e.i('div', {'class': 'msg_notifications_d', 'id': title}).t(msg_wrapper);
   // left
@@ -101,8 +101,8 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag, order) {
   e.i('div', {'class': `left_msg_pic_d ${pic}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(sub1).t(right_msg);
-  e.i('text', {'class': 'right_sub_msg'}).p(sub2).t(right_msg);
+  e.i('text', {'class': 'small grey align-left'}).p(sub1).t(right_msg);
+  e.i('text', {'class': 'small grey align-left'}).p(sub2).t(right_msg);
   let id = `judge_circle_${order}`;
   let judge_circle = e.i('text', {
     'id': id, 'class': 'right_arrow_msg_d_filled'
@@ -129,8 +129,8 @@ export function model_e(element, pic, title, sub, cb, cb2, flag) {
   let msg = e.i('div', {'class': 'msg_notifications_d'}).t(msg_wrapper);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
-  e.i('text', {'class': 'right_title_msg_e'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_title_msg_e'}).p(sub).t(right_msg);
+  e.i('text', {'class': 'small align-left'}).p(title).t(right_msg);
+  e.i('text', {'class': 'small align-left'}).p(sub).t(right_msg);
   // icon
   let judge_circle = e.i('text', {
     'id': `judge_circle_e_${title}`,
@@ -158,7 +158,7 @@ export function model_f(element, pic, title, sub) {
   e.i('div', {'class': `left_msg_pic_f ${pic}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg'}).p(title).t(right_msg);
+  e.i('text', {'class': 'medium align-left'}).p(title).t(right_msg);
   e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
   // e.i('div', {'class': 'right_arrow_msg right'}).t(msg);
 }

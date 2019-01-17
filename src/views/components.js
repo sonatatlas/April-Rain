@@ -46,9 +46,9 @@ function model_wrapper_generator(el, data, model, order) {
   let body_wrapper = e.i('div', {'class': 'card_body_model'}).t(card);
   e.i('div', {'class': 'card_br_black'}).t(card);
   let foot_wrapper = e.i('div', {'class': 'card_foot_model'}).t(card);
-  e.i('div', {'class': 'card_grey_font'}, {}, 'from').t(foot_wrapper);
+  e.i('div', {'class': 'medium grey mr-1'}, {}, 'from').t(foot_wrapper);
   e.i('div', {'class': `card_little_pic ${model}_${data.tapp}_foot_${order}`}).t(foot_wrapper);
-  e.i('div', {'class': 'card_foot_right'}, {}, data[model][`foot_${order}`]).t(foot_wrapper);
+  e.i('div', {'class': 'medium'}, {}, data[model][`foot_${order}`]).t(foot_wrapper);
   return body_wrapper;
 }
 
@@ -56,8 +56,8 @@ function body_top_array(el, data, model, order) {
   let passing = data[model][`top_array_${order}`];
   let array = e.i('div', {'class': 'card_body_top_array'}).t(el);
   e.i('div', {'class': `card_little_pic ${model}_${data.tapp}_${order}`}).t(array);
-  e.i('div', {'class': 'card_normal_font'}, {}, passing[0]).t(array);
-  e.i('div', {'class': 'card_grey_font'}, {}, passing[1]).t(array);
+  e.i('div', {'class': 'medium ml-1 mr-1'}, {}, passing[0]).t(array);
+  e.i('div', {'class': 'medium grey'}, {}, passing[1]).t(array);
 }
 
 function body_middle_pic(el, data, model, order) {
@@ -78,8 +78,8 @@ function creep_words(el, data, model, order) {
 
 function body_fall_words(el, word1, word2) {
   let line_wrapper = e.i('div', {'class': 'card_fall_words_wrapper'}).t(el);
-  e.i('div', {'class': 'card_normal_words'}, {}, word1).t(line_wrapper);
-  e.i('div', {'class': 'card_grey_font'}, {}, word2).t(line_wrapper);
+  e.i('div', {'class': 'mr-1'}, {}, word1).t(line_wrapper);
+  e.i('div', {'class': 'grey'}, {}, word2).t(line_wrapper);
 }
 
 function body_a(el, data, model, order) {

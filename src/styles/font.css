@@ -1,0 +1,19 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+/* fonts */
+.white { color: #fff }
+.grey { color: #aab2b7; font-weight: 400 }
+
+.bold { font-weight: bold }
+
+.small { font-size: 1.75em; line-height: 1.75em; }
+.medium { font-size: 2em; }
+.large { font-size: 2.25em; line-height: 2.25em; }
+
+.mt-1 { margin-top: .5em; }
+.ml-1 { margin-left: .5em; }
+.mr-1 { margin-right: .5em; }
+.mb-1 { margin-bottom: .5em; }
+.mx { margin: 0 5vw;}
+.align-left { text-align: left; }

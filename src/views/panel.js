@@ -1,6 +1,3 @@
-/*
- *
- **/
 //#home.js
 import {DOM, Element} from '../lib';
 import '../styles/panel.css';
@@ -41,7 +38,7 @@ export default function panel(){
     if (title == "Space"){
       title = "My Life"
     }
-    e.i('text', {'class': 'text_app'}, {}, title).t(app);
+    e.i('text', {'class': 'text_app large bold'}, {}, title).t(app);
   }
 
   //@tab-bar
@@ -55,5 +52,5 @@ export default function panel(){
       window.location.hash = '#notifications';
     }
   }).t(tab_bar_safe);
-  e.i('text', {'class': 'text_tab_bar text_tab_bar_trends'}, {}, `Notificaitions`).t(trends);
+  e.i('text', {'class': 'large bold white'}, {}, `Notificaitions`).t(trends);
 }

@@ -8,7 +8,7 @@ const e = new Element();
 const d = new DOM();
 
 /* methods */
-const text = (t, c) => e.i('text', {'class': `${c}`}, {}, t);
+const text = (t, c) => e.i('div', {'class': `${c}`}, {}, t);
 const welcome = e => {
   window.location.hash = '#welcome';
   // require('./welcome');
@@ -33,5 +33,5 @@ export default function home() {
     'class': 'logo_tachion logo_home'
   }, {'click': welcome}).t(logo_wrapper);
   let wrapper_bottom = e.i('div', {'class': 'wrapper_bottom'}).t(logo_wrapper);
-  text('OS for the blockchain era', 'font_regular_home').t(wrapper_bottom);
+  text('OS for the blockchain era', 'large white mt-1').t(wrapper_bottom);
 }
