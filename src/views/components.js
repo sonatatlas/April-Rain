@@ -122,7 +122,6 @@ export function card_model_c(el, data, order) {
   let words = data.model_c[`fall_words_${order}`];
   body_top_array(body_wrapper, data, 'model_c', order);
   body_fall_words(body_wrapper, words[0], words[1]);
-  body_fall_words(body_wrapper, words[2], words[3]);
   e.i('div', {'class': 'card_br_black'}).t(body_wrapper);
   pic_and_words(body_wrapper, data.model_c[`pic_and_words_${order}`][0]);
   pic_and_words(body_wrapper, data.model_c[`pic_and_words_${order}`][1]);

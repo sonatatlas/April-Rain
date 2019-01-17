@@ -13,12 +13,12 @@
       "Good shape"
     ],
     "card_b": [
-      "Sale Data to Public Health Institution",
+      "Sell Data to Public Health Institution",
       "3 vital data for 3 months",
       "$10/week + Service Coupon",
-      "Sale data to Sportech Sportwear",
+      "Sell data to Sportech",
       "3 activity data for 3 months",
-      "$10/week + Product Coupons"
+      "$10/week + Product Coupon"
     ],
     "card_c": [
       "Privacy",
@@ -41,15 +41,15 @@
         "-5% this month"
       ],
       "creep_words_a": [
-        "_Resting heart rate ↑",
+        "_Resting Heart Rate ↑",
         "related to",
-        "_Workout Time"
+        "_Workout Time ↑"
       ],
       "creep_words_b": [
         "_BMI ↓",
         "related to",
-        "_Workout Time",
-        "_Calories intake"
+        "_Workout Time ↑",
+        "_Calories Intake ↓"
       ],
       "foot_a": "Health Assistant"
     },
@@ -63,7 +63,7 @@
         "Sportech"
       ],
       "creep_words_a": [
-        "Sell 3 kind of",
+        "Sell 3 kinds of",
         "_Vital Data",
         "for",
         "_3 Months",
@@ -83,16 +83,16 @@
         "_Exercise Minutes"
       ],
       "fall_words_a": [
-        "Data type",
+        "Data Type",
         "Anonymous data",
-        "Pay frequency",
+        "Pay Frequency",
         "Weekly",
         "Physical Examination Coupon"
       ],
       "fall_words_b": [
-        "Data type",
-        "Anonymous data",
-        "Pay frequency",
+        "Data Type",
+        "Anonymous Data",
+        "Pay Frequency",
         "Weekly",
         "Sportswear Discount Coupon"
       ],
@@ -112,29 +112,25 @@
       ],
       "fall_words_a": [
         "Service",
-        "Body Guard® personal data protector",
-        "Description",
-        "provide data anonymization service before data send to buyers"
+        "Body Guard® personal data anonymization service"
       ],
       "fall_words_b": [
         "Service",
-        "Good Sign ® smart contract assistant",
-        "Description",
-        "audit and verify the smart contract and make signing secure"
+        "Good Sign ® smart contract assistant"
       ],
       "pic_and_words_a": [
-        "Service registered on this flow",
+        "Registered on the service stream",
         "Anonymized data send to buyer"
       ],
       "pic_and_words_b": [
-        "Service registered on this flow",
+        "Registered on the service stream",
         "Contract is audited and signed"
       ]
     }
   },
   "social": {
     "tapp": "social",
-    "noti": "Anniversary is Coming!",
+    "noti": "Anniversary is Coming",
     "sub": "In 2 days, let's prepare fot it!",
     "explain": "Assistants for Social Life",
     "services": [
@@ -142,15 +138,15 @@
       "Social Media", "Meetup"
     ],
     "card_a": [
-      "Tomorrow: Marriaged for 2 years",
-      "Agenda check: Great for a 3 day trip"
+      "Tomorrow Marriaged for 2 years",
+      "Agenda check Great for a 3 day trip"
     ],
     "card_b": [
       "Travel to Great Barrier Reef",
-      "Romantic & Diving you both like",
+      "You both like romantic & diving",
       "Departing tonight",
-      "Travel to Whitsunday islands",
-      "Beach & divnig your both like",
+      "Travel to Whitsunday Islands",
+      "You both like diving & beach",
       "Departing Tomorrow Morning"
     ],
     "card_c": [
@@ -176,14 +172,14 @@
       ],
       "top_array_a_b":[
         "Budget",
-        "5%↑ for average trip"
+        "5%↑ for average trips"
       ],
       "top_array_a_c": [
         "Crowdedness",
         "Medium"
       ],
       "top_array_b": [
-        "Whitsunday islands"
+        "Whitsunday Islands"
       ],
       "top_array_b_a":[
         "Weather",
@@ -191,28 +187,28 @@
       ],
       "top_array_b_b":[
         "Budget",
-        "30%↓ for average trip"
+        "30%↓ than average trips"
       ],
       "top_array_b_c": [
         "Crowdedness",
-        "Less"
+        "Low"
       ],
       "creep_words_a": [
-        "Your preference:",
+        "Your Preferred",
         "_Romantic",
         "_Diving",
-        "_Coral reef",
-        "Your partner",
+        "_Coral Reef",
+        "Your Partner's",
         "_Romantic",
         "_Seafood",
         "_Diving"
       ],
       "creep_words_b": [
-        "Your preference",
+        "Your Preferred",
         "_Diving",
         "_Beach",
         "_Rain forest",
-        "Your partner",
+        "Your Partner's",
         "_Seafood",
         "_Diving",
         "_Beach"
@@ -221,55 +217,54 @@
       "foot_b": "Travel assistant"
     },
     "model_e": {
-      "title_a": "Booking travel tickets",
+      "title_a": "Booking Travel Tickets",
       "foot_a": "Booking assisstant",
       "top_array_a_a": [
         "Airport parking lot check"
       ],
       "top_array_a_b": [
-        "Flight tickets locked"
+        "Flight tickets booked"
       ],
       "top_array_a_c": [
-        "Resort tickets locked"
+        "Resort tickets booked"
       ],
       "pic_and_words_a": [
         "Payment done"
       ]
     },
     "model_f": {
-      "title_a": "Renting house & car",
-      "title_b": "Select preferences car",
+      "title_a": "Renting House & Car",
       "foot_a": "Renting assistant",
       "top_array_a_a": [
-        "Select preferenced house"
+        "Select preferred house"
       ],
       "top_array_a_b": [
-        "Renting company rating passed"
+        "Select preferred house"
       ],
       "top_array_a_c": [
-        "Renting contract signing 2/2"
+        "Renting contracts signing 2/2"
       ],
       "pic_and_words_a": [
-        "Landlord credit & 6rating passed",
+        "Landlord credit & rating passed",
         "Renting company rating passed",
         "Payment contract signed"
       ]
     },
     "model_g": {
       "title_a": "Reminders set",
-      "foot_a": "Arrangement assistant",
+      "foot_a": "Daily assistant",
       "fall_words_a": [
-        "Agenda",
-        "Your reminders set",
-        "Your partner",
+        "Your Agenda",
+        "Reminders set",
+        "Your Partner's",
         "Agenda can sync to your partner after the big suprise"
       ]
     }
   },
   "store": {
     "tapp": "store",
-    "noti": "Get Ready for the Trip!",
-    "sub": "with customized diving suit",
+    "noti": "Get Ready for the Trip",
+    "sub": "with customized diving suits",
     "explain": "Assistants for Spending",
     "services": [
       "Shopping", "Renting",
@@ -277,45 +272,45 @@
     ],
     "card_a": [
       "The diving sites prefer owning a suit",
-      "Customized suit reduce sickness"
+      "Customized suits increase rigidness"
     ],
     "card_b": [
-      "Buy Suits form Sportech Sportware",
+      "Buy Suits form Sportech",
       "3D printed with your body info",
       "35% off with divig discount & Coupon"
     ],
     "card_c": [
       "Send",
-      "anonymous data",
+      "Anonymous Data",
       "Production &",
-      "Delivery confirm",
+      "Delivery Confirm",
       "Payment",
-      "complete"
+      "Complete"
     ],
     "card_d": [
       "2 suits order placed",
-      "Received at the diving site"
+      "Receive at the diving site"
     ],
     "model_h": {
-      "title_a": "Suits form Sportech Sportware",
-      "foot_a": "Shopping assistant",
+      "title_a": "Buy Suits form Sportech",
+      "foot_a": "Shopping Assistant",
       "top_array_a_a": [
-        "Sportech Sportware"
+        "Sportech"
       ],
       "top_array_a_b": [
         "3D printed with your body info"
       ],
       "top_array_a_c": [
-        "Delivery to diving site while you reach their"
+        "Will deliver to diving site once you reach there"
       ],
       "top_array_a_d": [
-        "Fit in the sportwear shopping budget with 35% discount"
+        "Accommodate to family shopping budget"
       ]
     }
   },
   "work": {
     "tapp": "work",
-    "noti": "Re-schedule Your Work!",
+    "noti": "Re-schedule Your Work",
     "sub": "Enjoy your trip",
     "explain": "Assistants for Productivity",
     "services": [
@@ -324,12 +319,12 @@
     ],
     "card_a": [
       "A designing task deadline in 2 days",
-      "It's Non-urgent and related to Bob"
+      "It's non-urgent and related to Bob"
     ],
     "card_b": [
-      "Ask Bob if he can re-schedule",
+      "Ask Bob if He Can Re-schedule",
       "It's ok according to project plan",
-      "Can bring back some gift for him"
+      "Can bring back a gift for him"
     ],
     "card_c": [
       "Request",
@@ -338,37 +333,37 @@
       "Bob reminder"
     ],
     "card_d": [
-      "Request send, Waiting for reply"
+      "Request send, waiting for response"
     ]
   },
   "wallet": {
     "tapp": "wallet",
-    "noti": "New Investment Assistant!",
-    "sub": "5% higher performance",
+    "noti": "New Investment Assistant",
+    "sub": "5% higher performance ",
     "explain": "Assistants for Managing Wealth",
     "services": [
       "Money", "Asset",
       "Budget", "Investment"
     ],
     "card_a": [
-      "5% more in historical performance",
-      "Equally subscription monthly fee"
+      "5% ↑ than your average performance",
+      "Equal monthly subscription"
     ],
     "card_b": [
-      "Consider to subscribe new assistant",
-      "Know better about your fiance st",
-      "Smarter choice, same $5 per month"
+      "Subscribe to a new assistant",
+      "A new assistant will know better about",
+      "your financial situation"
     ],
     "card_c": [
       "Subscription",
       "Contract Signed",
       "Assistant",
       "Downloaded",
-      "Related data",
+      "Related Data",
       "Permission"
     ],
     "card_d": [
-      "New assistant is working!"
+      "New assistant is employed"
     ]
   },
   "about": {

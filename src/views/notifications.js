@@ -3,7 +3,6 @@
  **/
 //#home.js
 import {DOM, Element, Scroller} from '../lib';
-import {  } from '../model/card';
 import '../styles/notifications.css';
 import '../styles/pics.css';
 import { router } from '.';
@@ -27,7 +26,7 @@ function model_a(tapp, noti, sub) {
   e.i('div', {'class': `left_msg_pic noti_${tapp}`}).t(left_msg);
   // right
   let right_msg = e.i('div', {'class': 'right_msg_notifications'}).t(msg);
-  e.i('text', {'class': 'right_title_msg'}).p(noti.slice(0, noti.length - 1)).t(right_msg);
+  e.i('text', {'class': 'right_title_msg'}).p(noti).t(right_msg);  
   e.i('text', {'class': 'right_sub_msg'}).p(sub).t(right_msg);
   // icon
   e.i('div', {'class': 'right_arrow_msg right'}).t(msg);

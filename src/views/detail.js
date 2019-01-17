@@ -81,7 +81,7 @@ export default function detail(data) {
 
   /* DOM */
   //@navigator
-  navigator('panel', data.noti);
+  navigator('panel', '');
 
   //@structure
   let page_detail = e.i('section', {'class': 'page page_detail'}).t(d.id('tachion'));

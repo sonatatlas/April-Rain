@@ -95,6 +95,6 @@ export default function tapp(data){
     }).t(wrapper_app_tapp_safe);
     let wrapper_icon = e.i('div', {'class': 'wrapper_icon_tapp'}).t(app);
     e.i('div', {'class': `left_msg_pic ${pics[i]}`}).t(wrapper_icon);
-    e.i('div', {'class': 'text_tapp'}, {}, `${apps[i]} Asstistant`).t(app);
+    e.i('div', {'class': 'text_tapp'}, {}, `${apps[i]} Assistant`).t(app);
   }
 }
