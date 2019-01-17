@@ -10,7 +10,9 @@
     ],
     "card_a": [
       "Healthier heart",
-      "Good shape"
+      "lower resting heart rate",
+      "Good shape",
+      "lower BMI"
     ],
     "card_b": [
       "Sell Data to Public Health Institution",
@@ -138,8 +140,10 @@
       "Social Media", "Meetup"
     ],
     "card_a": [
-      "Tomorrow Marriaged for 2 years",
-      "Agenda check Great for a 3 day trip"
+      "Tomorrow",
+      "marriaged for 2 years",
+      "Agenda check",
+      "great for a 3 day trip"
     ],
     "card_b": [
       "Travel to Great Barrier Reef",
@@ -264,6 +268,7 @@
   "store": {
     "tapp": "store",
     "noti": "Get Ready for the Trip",
+    "noti_b": "Buy diving suits for the trip",
     "sub": "with customized diving suits",
     "explain": "Assistants for Spending",
     "services": [
@@ -271,8 +276,8 @@
       "Flea Market", "Travel"
     ],
     "card_a": [
-      "The diving sites prefer owning a suit",
-      "Customized suits increase rigidness"
+      "", "The diving sites prefer owning a suit",
+      "", "Customized suits increase rigidness"
     ],
     "card_b": [
       "Buy Suits form Sportech",
@@ -311,6 +316,7 @@
   "work": {
     "tapp": "work",
     "noti": "Re-schedule Your Work",
+    "noti_b": "Re-schedule Work to Enjoy Trip",
     "sub": "Enjoy your trip",
     "explain": "Assistants for Productivity",
     "services": [
@@ -318,8 +324,8 @@
       "Project", "Education"
     ],
     "card_a": [
-      "A designing task deadline in 2 days",
-      "It's non-urgent and related to Bob"
+      "", "A designing task deadline in 2 days",
+      "", "It's non-urgent and related to Bob"
     ],
     "card_b": [
       "Ask Bob if He Can Re-schedule",
@@ -346,8 +352,8 @@
       "Budget", "Investment"
     ],
     "card_a": [
-      "5% ↑ than your average performance",
-      "Equal monthly subscription"
+      "", "5% ↑ than your average performance",
+      "", "Equal monthly subscription"
     ],
     "card_b": [
       "Subscribe to a new assistant",

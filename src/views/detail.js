@@ -91,12 +91,16 @@ export default function detail(data) {
   let card_a_wrapper = e.i('div', {
     'class': 'card_a_wrapper card_a_wrapper_bg'
   }, {'touchend': () => {}}).t(safe_detail);
-  model_b(card_a_wrapper, `detail_${data.tapp}`, data.noti, data.sub,
+
+  data.noti_b?data.noti = data.noti_b:"";
+  // MODEL_B
+  model_b(card_a_wrapper, `detail_${data.tapp}`, data.noti, "",
     () => card_model_a(page_detail, data),
     data.tapp);
+  
   e.i('div', {'class': 'br'}).t(card_a_wrapper);
-  model_c(card_a_wrapper, `card_a_${data.tapp}`, data.card_a[0]);
-  model_c(card_a_wrapper, `card_a_${data.tapp}_b`, data.card_a[1]);
+  model_c(card_a_wrapper, `card_a_${data.tapp}`, data.card_a[0], data.card_a[1]);
+  model_c(card_a_wrapper, `card_a_${data.tapp}_b`, data.card_a[2], data.card_a[3]);
 
   let slide_model_d = e.i('div', {
     'class': 'slide_model_d',

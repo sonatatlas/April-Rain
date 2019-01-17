@@ -63,9 +63,9 @@ export function model_c(element, pic, title, sub) {
   let left_msg = e.i('div', {'class': 'left_msg_notifications_c'}).t(msg);
   e.i('div', {'class': `left_msg_pic_c ${pic}`}).t(left_msg);
   // right
-  let right_msg = e.i('div', {'class': 'right_msg_notifications_c'}).t(msg);
+  let right_msg = e.i('div', {'class': 'right_msg_notifications_c_2'}).t(msg);
   e.i('text', {'class': 'right_title_msg_b'}).p(title).t(right_msg);
-  e.i('text', {'class': 'right_osub_msg_b'}).p(sub).t(right_msg);
+  e.i('text', {'class': 'right_sub_msg_c'}).p(sub).t(right_msg);
 }
 
 /* model d */

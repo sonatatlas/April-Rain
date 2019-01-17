@@ -13,13 +13,13 @@
 }
 
 .unread_dot {
-    position: relative;
-    border-radius: 66px;
     top: 10vw;
     left: 5vw;
-    height: 3vw;
     width: 3vw;
-    background-image:linear-gradient(135deg,#80efe3, #16c2c3);
+    height: 3vw;
+    position: relative;
+    border-radius: 66px;
+    background-image:linear-gradient(135deg, #80efe3, #16c2c3);
 }
 
 /* model_a */
@@ -44,7 +44,7 @@
     width: 7em;
     height: 7em;
     border-radius: 66px;
-    background-image:linear-gradient(135deg,#80efe3, #16c2c3);
+    background-image:linear-gradient(135deg, #80efe3, #16c2c3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +154,14 @@
     color: #fff;
 }
 
+.right_sub_msg_c {
+    margin-left: 0.3em;
+    line-height: 2em;
+    text-align: left;
+    font-size: 2em;
+    color: #fff;
+}
+
 /* model_c */
 .msg_wrapper_c {
     width: auto;
@@ -192,6 +200,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.right_msg_notifications_c_2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }   
 

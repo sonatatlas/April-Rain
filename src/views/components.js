@@ -54,14 +54,14 @@ function model_wrapper_generator(el, data, model, order) {
 
 function body_top_array(el, data, model, order) {
   let passing = data[model][`top_array_${order}`];
-  let array = e.i('div', {'class': 'card_body_top_array'}).t(el)
+  let array = e.i('div', {'class': 'card_body_top_array'}).t(el);
   e.i('div', {'class': `card_little_pic ${model}_${data.tapp}_${order}`}).t(array);
-  e.i('div', {}, {}, passing[0]).t(array);
+  e.i('div', {'class': 'card_normal_font'}, {}, passing[0]).t(array);
   e.i('div', {'class': 'card_grey_font'}, {}, passing[1]).t(array);
 }
 
 function body_middle_pic(el, data, model, order) {
-  e.i('div', {'class': `card_row_cover_pic ${model}_${data.tapp}_pic_${order}`}).t(el)
+  e.i('div', {'class': `card_row_cover_pic ${model}_${data.tapp}_pic_${order}`}).t(el);
 }
 
 function creep_words(el, data, model, order) {

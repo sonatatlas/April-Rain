@@ -7,6 +7,7 @@ import '../styles/notifications.css';
 import '../styles/pics.css';
 import { router } from '.';
 import data from './data.json';
+import { navigator } from './components';
 
 function model_a(tapp, noti, sub) {
   // wrapper
@@ -68,14 +69,7 @@ export default function notifications(){
   let page_notifications = e.i('section', {'class': 'page page_notifications'}).t(d.id('tachion'));
 
   //@navigator
-  let navigator = e.i('div', {'class': 'navigator'}).t(page_notifications);
-  e.i('div', {'class': 'left left_navigator'}, {
-    'touchend': () => {
-      window.location.hash = '#panel';
-      router.panel();
-    }
-  }).t(navigator);
-  e.i('div', {'class': 'label_navigator'}, {}, 'Notifications').t(navigator);
+  navigator('panel');  
 
   //@notifications-wrapper
   let safe_notifications = e.i('div', {
