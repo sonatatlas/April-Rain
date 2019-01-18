@@ -18,7 +18,7 @@
       "Sell Data to Public Health Institution",
       "3 vital data for 3 months",
       "$10/week + Service Coupon",
-      "Sell data to Sportech",
+      "Sell Data to Sportech",
       "3 activity data for 3 months",
       "$10/week + Product Coupon"
     ],
@@ -102,8 +102,8 @@
       "foot_b": "Earning Assistant"
     },
     "model_c": {
-      "title_a": "Privacy protection",
-      "title_b": "Contract auditing & signing",
+      "title_a": "Privacy Protection",
+      "title_b": "Contract Auditing & Signing",
       "foot_a": "Privacy Assistant",
       "foot_b": "Contract Assistant",
       "top_array_a": [
@@ -306,10 +306,10 @@
         "3D printed with your body info"
       ],
       "top_array_a_c": [
-        "Will deliver to diving site once you reach there"
+        "Will deliver to site before you arrive"
       ],
       "top_array_a_d": [
-        "Accommodate to family shopping budget"
+        "Accommodate to shopping budget"
       ]
     }
   },

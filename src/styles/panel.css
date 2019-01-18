@@ -27,6 +27,7 @@
 .app {
     height: 26em;
     width: 26em;
+    text-align: center;
     margin-bottom: 3em;
     border-radius: 5px;
     box-shadow: 0px 10px 50px 0px #eee;

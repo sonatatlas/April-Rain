@@ -11,8 +11,6 @@ const d = new DOM();
 const text = (t, c) => e.i('div', {'class': `${c}`}, {}, t);
 const welcome = e => {
   window.location.hash = '#welcome';
-  // require('./welcome');
-  // window.location.reload();
 }
 
 /* DOM */
@@ -31,7 +29,9 @@ export default function home() {
   let logo_wrapper = e.i('div', {'class': 'logo_wrapper_home'}).t(safe_home);
   let logo_tachion = e.i('div', {
     'class': 'logo_tachion logo_home'
-  }, {'click': welcome}).t(logo_wrapper);
+  }, {
+    'touchend': welcome
+  }).t(logo_wrapper);
   let wrapper_bottom = e.i('div', {'class': 'wrapper_bottom'}).t(logo_wrapper);
   text('OS for the blockchain era', 'large white mt-1').t(wrapper_bottom);
 }

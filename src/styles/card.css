@@ -63,6 +63,7 @@
     position: relative;
     left: 4vw;
     display: flex;
+    width: 70vw;
     flex-direction: column;
     justify-content: center;
 }

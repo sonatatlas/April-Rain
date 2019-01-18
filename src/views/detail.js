@@ -53,7 +53,7 @@ function slide_area(element, data) {
         () => {
           if (data.tapp == 'space') {
             card_model_c(page, data, 'b');
-          } else if (data.tapp = 'social') {
+          } else if (data.tapp == 'social') {
             card_model_f(page, data, 'a');
           }
         },
@@ -140,7 +140,17 @@ export default function detail(data) {
       'b'
     );
   }
-  let dots = e.i('div', {'class': 'slide_model_d_dots'}).t(safe_detail);
-  e.i('div', {'class': 'slide_dot slide_dot_on', 'id': 'dot_1'}).t(dots);
-  e.i('div', {'class': 'slide_dot slide_dot_off', 'id': 'dot_2'}).t(dots);
+
+  let multi_tapps = (arr, tapp) => {
+    for (let i in arr) {
+      if (tapp == arr[i])
+        return true;
+    }
+  }
+  
+  if (multi_tapps(['space', 'social'], data.tapp)) {
+    let dots = e.i('div', {'class': 'slide_model_d_dots'}).t(safe_detail);
+    e.i('div', {'class': 'slide_dot slide_dot_on', 'id': 'dot_1'}).t(dots);
+    e.i('div', {'class': 'slide_dot slide_dot_off', 'id': 'dot_2'}).t(dots);
+  }
 }
