@@ -63,7 +63,7 @@
     position: relative;
     left: 4vw;
     display: flex;
-    width: 70vw;
+    width: 60vw;
     flex-direction: column;
     justify-content: center;
 }
@@ -154,7 +154,7 @@
 }
 
 .left_msg_pic_c {
-    margn: auto;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -259,8 +259,6 @@
     flex-direction: row;
     width: auto;
     white-space: nowrap;
-    overflow: hidden;
-    overflow-x: scroll;
     text-align: justify;
     margin-right: 5vw;
     margin-left: 5vw;
@@ -283,9 +281,9 @@
     background-color: #fff;
     border-radius: 15px;
     margin: 2.5em 10px;
-    margin-right: 5vw;
-    animation: slide_in .3s;
-    -webkit-animation: slide_in .3s;
+    margin-right: 3vw;
+    animation: slide_in .5s;
+    -webkit-animation: slide_in .5s;
 }
 
 .right_arrow_msg_e {
@@ -328,8 +326,8 @@
     background-color:#fff;
     border-radius: 15px;
     margin: 2.5em 5vw;
-    animation: slide_in .3s;
-    -webkit-animation: slide_in .3s;
+    animation: slide_in .5s;
+    -webkit-animation: slide_in .5s;
 }
 
 .msg_notifications_f {

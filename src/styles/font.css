@@ -9,11 +9,14 @@
 
 .small { font-size: 1.75em; line-height: 1.75em; }
 .medium { font-size: 2em; }
-.large { font-size: 2.25em; line-height: 2.25em; }
+.large { font-size: 2.25em!important; line-height: 2.25em; }
 
 .mt-1 { margin-top: .5em; }
 .ml-1 { margin-left: .5em; }
 .mr-1 { margin-right: .5em; }
 .mb-1 { margin-bottom: .5em; }
+.mb-2 { margin-bottom: 1em; }
 .mx { margin: 0 5vw;}
+
 .align-left { text-align: left; }
+.align-center { text-align: center; }

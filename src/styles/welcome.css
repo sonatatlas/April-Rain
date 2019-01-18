@@ -29,9 +29,47 @@
 .logo_welcome {
     position: relative;
     margin: 3em auto;
+    margin-top: 2em;
     height: 16em;
     width: 16em;
 }
+
+.wrapper_model_welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ANIMATION */
+.changing_text {
+    margin-top: 2em;
+    height: 2em;
+}
+
+.progress_bar {
+    margin: 1em 0;
+    height: 1em;
+    width: 30em;
+    border-radius: 33px;
+}
+
+.injecting {
+    background-image:linear-gradient(135deg,#80efe3, #16c2c3);
+    animation: stretch 3s;
+}
+
+@keyframes stretch {
+    from { width: 0 }
+    to { left: 45em }
+}
+
+@-webkit-keyframes stretch {
+    from { left: 0 }
+    to { left: 45em }
+}
+
+
 
 /* Phone */
 @media (min-device-height: 750px) {
@@ -41,7 +79,6 @@
     .content_top_welcome { padding-top: 6em }
 }
 
-/* Pad */
 /* Pad */
 @media (min-device-width: 750px) {
     .content_top_welcome {

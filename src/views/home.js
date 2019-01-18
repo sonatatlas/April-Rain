@@ -22,7 +22,7 @@ export default function home() {
   //@content_top
   let content_top =  e.i('div', {'class': 'content_top_home'}).t(safe_home);
   text('FUTURE OS', 'font_bold_home').t(content_top);
-//  text('DEMO', 'font_bold_home').t(content_top);
+  //  text('DEMO', 'font_bold_home').t(content_top);
   text('EXPERIENCE', 'font_bold_home').t(content_top);
 
   //@content_body

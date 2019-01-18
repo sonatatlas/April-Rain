@@ -6,13 +6,6 @@
     font-weight: 500;
     text-align: center;
     moz-user-select: -moz-none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select:none;
-    -webkit-user-select:none;
-    -ms-user-select:none;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
     user-select:none;
     margin: 0;
     padding: 0;
@@ -26,6 +19,8 @@ html {
 
 body {
     -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow: hidden;
 }
 
 html, body {
@@ -33,9 +28,13 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
+    background-color: #fafafa;
 }
 
 #tachion {
+    display: fixed;
+    /* prevent slidinig */
+    overflow: hidden;
     height: 100%;
     width: 100%;
 }
@@ -57,4 +56,38 @@ html, body {
 
 .logo_tachion {
     background: center / cover no-repeat url(../assets/components/tachion.svg);
+}
+
+.scroll_x {
+    overflow: hidden;
+    overflow-x:scroll!important; 
+    overflow-y:hidden;
+}
+
+.scroll_x::-webkit-scrollbar {
+    display: none!important;
+    width:0px;
+} 
+.scroll_x::-webkit-scrollbar * {
+    display: none!important;
+    background:transparent;
+} 
+.scroll_x::-webkit-scrollbar-thumb { 
+    background:rgba(255, 255, 255, .1)!important;
+}
+
+.scroll_y {
+    overflow: hidden;
+    overflow-x:hidden; 
+    overflow-y:scroll!important;
+}
+
+.scroll_y::-webkit-scrollbar { 
+    width:0px;
+} 
+.scroll_y::-webkit-scrollbar * { 
+    background:transparent;
+} 
+.scroll_y::-webkit-scrollbar-thumb { 
+    background:rgba(255, 255, 255, .1)!important;
 }

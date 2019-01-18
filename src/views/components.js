@@ -11,6 +11,11 @@ import '../styles/notifications.css';
 const d = new DOM();
 const e = new Element();
 
+export function active_dot(element, id) {
+  id?e.i('div', {'class': 'active_dot', 'id': id}).t(element)
+    :e.i('div', {'class': 'active_dot'}).t(element);
+}
+
 /* navigator */
 export function navigator(path, text) {
   let navigator = e.i('div', {'class': 'navigator'}).t(d.id('tachion'));

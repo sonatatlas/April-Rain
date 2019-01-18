@@ -42,6 +42,10 @@
     top: 32%;
 }
 
+.wrapper_bottom > div {
+    text-align: center;
+}
+
 /* Phone */
 @media (min-device-height: 750px) {
     .content_top_home { padding-top: 13em }

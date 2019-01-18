@@ -23,12 +23,13 @@ export default function panel(){
   let apps = ['space', 'social', 'store', 'work', 'wallet', 'about'];
   for (let i in apps) {
     let app = e.i('div', {'class': `app ${apps[i]}`, 'id': `${apps[i]}`}, {
-      'passive': () => {
+      'touchstart': () => {
         d.id(apps[i]).style.backgroundColor = 'rgba(0, 0, 0, 0.08)';
-      }, 'touchend': () => {
+      },
+      'touchend': () => {
         d.id(apps[i]).style.backgroundColor = '#fff';
         if(apps[i] === 'about') {
-          // window.location.hash = '#detail?tapp=about';
+          window.location.hash = '#stream';
         } else {
           window.location.hash = `#tapp?tapp=${apps[i]}`;
         }

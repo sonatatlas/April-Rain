@@ -5,9 +5,7 @@
     background-color: #fafafa;
 }
 
-.safe_detail {
-    overflow-y: scroll;
-}
+.safe_detail {}
 
 .card_a_wrapper {
     top: 1em;

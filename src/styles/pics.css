@@ -171,5 +171,7 @@
 .model_h_store_a_d {background-image:  url('../assets/detail/model_h/store_a_d.svg')}
 .model_h_store_pic_a_a {background-image:  url('../assets/detail/model_h/store_pic_a.png')}
 
-.foot_health { background-image:  url('../assets/model/foot_health.svg')}
-.chart {background-image:  url('../assets/model/chart.svg')}
+/* About */
+.about_pic_a {background-image:  url('../assets/stream/about-1.png')}
+.about_pic_b {background-image:  url('../assets/stream/about-2.png')}
+.about_pic_c {background-image:  url('../assets/stream/about-3.png')}
