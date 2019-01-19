@@ -39,27 +39,30 @@ export default function welcome() {
 
   //@logo_figner
   //FINGER_DOM
+  let logo_press = false;
   let logo_finger = e.i('div', {'class': 'logo_finger logo_welcome'}, {
     touchstart: () => {
-      d.id('progress_bar').className = 'progress_bar injecting';
-      d.id('changing_text').innerHTML = 'Sync health data...';
+      if(!logo_press){
+        logo_press = true;
+        d.id('progress_bar').className = 'progress_bar injecting';
+        d.id('changing_text').innerHTML = 'Sync health data...';
 
-      setTimeout(() => {
-        d.id('changing_text').innerHTML = 'behavioral data...';
-      }, 1000)
-      
-      setTimeout(() => {
-        d.id('changing_text').innerHTML = 'emotional data...';
-      }, 2000)
+        setTimeout(() => {
+          d.id('changing_text').innerHTML = 'behavioral data...';
+        }, 500)
+        
+        setTimeout(() => {
+          d.id('changing_text').innerHTML = 'emotional data...';
+        }, 1000)
 
-      setTimeout(() => {
-        d.id('changing_text').innerHTML = 'Complete!';
-      }, 3000)
+        setTimeout(() => {
+          d.id('changing_text').innerHTML = 'Complete!';
+        }, 1300)
 
-      setTimeout(() => {
-        window.location.hash = '#panel';
-      }, 3500)
-      
+        setTimeout(() => {
+            window.location.hash = '#panel';
+        }, 1500)
+      }      
     }, touchend: () => {
 
     }

@@ -13,6 +13,7 @@ const d = new DOM();
 const e = new Element();
 
 function model_a(tapp, noti, sub) {
+  sessionStorage.setItem('finger_press', false);
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper'}, {
     'touchstart': () => {

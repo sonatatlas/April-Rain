@@ -1,7 +1,7 @@
 {
   "space": {
     "tapp": "space",
-    "noti": "Healthier Body!",
+    "noti": "Healthy Body!",
     "sub": "2 health indicators improved",
     "explain": "Assistants for Daily Life",
     "services": [
@@ -9,7 +9,7 @@
       "Information", "Entertainment"
     ],
     "card_a": [
-      "Healthier heart",
+      "Healthy heart",
       "lower resting heart rate",
       "Good shape",
       "lower BMI"
@@ -141,9 +141,9 @@
     ],
     "card_a": [
       "Tomorrow",
-      "marriaged for 2 years",
+      "married for 2 years",
       "Agenda check",
-      "great for a 3 day trip"
+      "great for a 3-day trips"
     ],
     "card_b": [
       "Travel to Great Barrier Reef",
@@ -211,18 +211,18 @@
         "Your Preferred",
         "_Diving",
         "_Beach",
-        "_Rain forest",
+        "_Rain Forest",
         "Your Partner's",
         "_Seafood",
         "_Diving",
         "_Beach"
       ],
-      "foot_a": "Travel assistant",
-      "foot_b": "Travel assistant"
+      "foot_a": "Travel Assistant",
+      "foot_b": "Travel Assistant"
     },
     "model_e": {
       "title_a": "Booking Travel Tickets",
-      "foot_a": "Booking assisstant",
+      "foot_a": "Booking Assisstant",
       "top_array_a_a": [
         "Airport parking lot check"
       ],
@@ -238,7 +238,7 @@
     },
     "model_f": {
       "title_a": "Renting House & Car",
-      "foot_a": "Renting assistant",
+      "foot_a": "Renting Assistant",
       "top_array_a_a": [
         "Select preferred house"
       ],
@@ -256,7 +256,7 @@
     },
     "model_g": {
       "title_a": "Reminders set",
-      "foot_a": "Daily assistant",
+      "foot_a": "Daily Assistant",
       "fall_words_a": [
         "Your Agenda",
         "Reminders set",
@@ -268,7 +268,7 @@
   "store": {
     "tapp": "store",
     "noti": "Get Ready for the Trip",
-    "noti_b": "Buy diving suits for the trip",
+    "noti_b": "Buy Diving Suits for the Trip",
     "sub": "with customized diving suits",
     "explain": "Assistants for Spending",
     "services": [
@@ -286,7 +286,7 @@
     ],
     "card_c": [
       "Send",
-      "Anonymous Data",
+      "Anonymous data",
       "Production &",
       "Delivery Confirm",
       "Payment",
@@ -334,7 +334,7 @@
     ],
     "card_c": [
       "Request",
-      "send",
+      "Send",
       "Gift for",
       "Bob reminder"
     ],
@@ -356,7 +356,7 @@
       "", "Equal monthly subscription"
     ],
     "card_b": [
-      "Subscribe to a new assistant",
+      "Subscribe to a New Assistant",
       "A new assistant will know better about",
       "your financial situation"
     ],

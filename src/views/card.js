@@ -116,17 +116,16 @@ export function model_d(element, pic, title, sub1, sub2, cb, cb2, flag, order) {
 
       // delete sub dot
       let sub_id = `card_${id.slice(id.length - 1)}_dot`
-      try {
+      if(d.id(sub_id)){
         d.id(sub_id).parentNode.removeChild(d.id(sub_id))
-      } catch(err) {
-        throw(err);
       }
+
 
       // next card
       if (cb != undefined) { cb(); }
-      try {
+      if(d.id('dots')){
         d.id('dots').parentNode.removeChild(d.id('dots'));
-      } catch(err) { ''; }        
+      }
       d.id('slide_model_d').className = 'slide_model_d disabled';      
     }
   }).t(msg);
@@ -160,7 +159,7 @@ export function model_e(element, pic, title, sub, cb, cb2, flag) {
   let hash = location.hash;
   
   let tapp_page = hash.slice(hash.indexOf('=')).slice(1)
-  if(tapp_page != 'work' && tapp_page != 'wallet')
+  if(tapp_page == 'space' || tapp_page == 'social') 
     active_dot(d.id(title));
   
   setTimeout(() => {    

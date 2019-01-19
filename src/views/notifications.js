@@ -9,7 +9,7 @@ import { router } from '.';
 import data from './data.json';
 import { navigator } from './components';
 
-function model_a(tapp, noti, sub) {
+function model_a(tapp, noti, sub) {  
   // wrapper
   let msg_wrapper = e.i('div', {'class': 'msg_wrapper'}, {
     'touchstart': () => {
@@ -63,6 +63,7 @@ function msgChecker(unread, read) {
 /* Init */
 export default function notifications(){
   d.id('tachion').innerHTML = '';
+  sessionStorage.setItem('finger_press', false);
 
   /* DOM */
   //@structure

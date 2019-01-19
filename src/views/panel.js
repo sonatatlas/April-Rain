@@ -11,7 +11,8 @@ const e = new Element();
 /* Init */
 export default function panel(){
   d.id('tachion').innerHTML = '';
-
+  localStorage.setItem('finger_press', true);
+  
   /* DOM */
   //@structure
   let page_panel = e.i('section', {'class': 'page page_panel'}).t(d.id('tachion'));

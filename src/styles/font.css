@@ -18,5 +18,7 @@
 .mb-2 { margin-bottom: 1em; }
 .mx { margin: 0 5vw;}
 
+.nw { white-space: nowrap; }
+
 .align-left { text-align: left; }
 .align-center { text-align: center; }

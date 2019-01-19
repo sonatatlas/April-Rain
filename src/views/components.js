@@ -83,7 +83,7 @@ function creep_words(el, data, model, order) {
 
 function body_fall_words(el, word1, word2) {
   let line_wrapper = e.i('div', {'class': 'card_fall_words_wrapper'}).t(el);
-  e.i('div', {'class': 'mr-1'}, {}, word1).t(line_wrapper);
+  e.i('div', {'class': 'mr-1 nw'}, {}, word1).t(line_wrapper);
   e.i('div', {'class': 'grey'}, {}, word2).t(line_wrapper);
 }
 
